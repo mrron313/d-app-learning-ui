@@ -4,19 +4,21 @@ import SideBar from './Sidebar';
 import Header from './Header';
 
 import './Layout.css';
+import { Grid } from '@mui/material';
 
 function MainLayout({ children }) {
   return (
-    <section className='layout'>
+    <Grid className='layout'>
       <Header />
-      <section>
+      <Grid container>
+        <Grid item xs={3}>
           <SideBar /> 
-          <main>
-            {children}
-          </main>
-          <Footer />
-      </section>
-    </section>
+        </Grid>
+        <Grid item xs={9}>
+          {children}
+        </Grid>
+      </Grid>
+    </Grid>
   );
 }
 
