@@ -6,7 +6,6 @@ import icon2 from "../../assets/icon-2.png";
 import user from "../../assets/user.png";
 
 import { Grid, TextField } from '@mui/material';
-import { makeStyles } from '@mui/styles';
 
 function Header() {
   return (

@@ -36,3 +36,23 @@
   text-align: center;
   text-decoration: none;
 }
+
+/* 
+  Sidebar Design
+*/
+.sidebar {
+  background-color: azure;
+  padding: 20px;
+  border-radius: 30px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  padding: 15px 0px;
+}
