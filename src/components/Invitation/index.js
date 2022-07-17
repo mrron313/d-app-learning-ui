@@ -1,9 +1,10 @@
 import React from 'react';
+import InvitationCard from './InvitationCard';
 
 const Invitation = () => {
   return ( 
-    <h6>Invitation</h6>
-   );
+    <InvitationCard />
+  );
 }
  
 export default Invitation;

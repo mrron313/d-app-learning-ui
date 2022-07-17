@@ -5,6 +5,7 @@ import Header from './Header';
 
 import './Layout.css';
 import { Grid } from '@mui/material';
+import TrandingNews from '../TrandingNews/index';
 
 function MainLayout({ children }) {
   return (
@@ -15,7 +16,14 @@ function MainLayout({ children }) {
           <SideBar /> 
         </Grid>
         <Grid item xs={10}>
-          {children}
+          <Grid container>
+            <Grid item xs={12}>
+              {children}
+            </Grid>
+            <Grid item xs={12}>
+              <TrandingNews />
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
     </Grid>
