@@ -18,6 +18,18 @@
 
 .searchBar {
   margin-top: 40px !important;
+  width: 684px!important;
+  height: 50px;
+  box-sizing: border-box;
+  background: #F5F9FD;
+  border: 1.50117px solid rgba(43, 0, 212, 0.06);
+  border-radius: 15px;
+  border: none;
+}
+
+.searchBar label {  
+  padding: 10px;
+  top: -15px;
 }
 
 .headerMenu ul {
@@ -46,20 +58,36 @@
   Sidebar Design
 */
 .sidebar {
-  background-color: azure;
   padding: 20px;
-  border-radius: 15px;
-  width: 60%;
   display: flex;
-  align-items: center;
+  background: #FAFBFC;
+  min-height: 280px;
+  border-radius: 25px;
 }
 
 .sidebar ul {
   list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .sidebar ul li {
-  padding: 15px 0px;
+  margin: 40px 0px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #32363C;
+  padding: 8px 56px;
+  min-width: 116px;
+  height: 18px;
+}
+
+.activeSidebarMenu {
+  background: linear-gradient(104.08deg, #FECE76 -28.92%, #F78B88 76.85%);
+  box-shadow: 0px 13px 39px rgb(247 143 138 / 47%);
+  border-radius: 15px;
+  color: #fff!important;
 }
 
 

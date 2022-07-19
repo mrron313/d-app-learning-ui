@@ -10,7 +10,7 @@ const Wallet = () => {
           <div className="front__face-photo"></div>
             <Grid item className='userDetailsLeft'>
               <div className='userDetailsLeftHeader'>
-                <Typography variant='h4'>Arif Islam</Typography>
+                <Typography variant='h4'>John Doe</Typography>
                 <Typography variant='p'>User experience designer</Typography>
               </div>
 

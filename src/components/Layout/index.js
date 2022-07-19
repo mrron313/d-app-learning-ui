@@ -11,11 +11,11 @@ function MainLayout({ children }) {
   return (
     <Grid className='layout'>
       <Header />
-      <Grid container>
-        <Grid item xs={2}>
+      <Grid container spacing={4}>
+        <Grid item xs={2.5}>
           <SideBar /> 
         </Grid>
-        <Grid item xs={10}>
+        <Grid item xs={9.5}>
           <Grid container>
             <Grid item xs={12}>
               {children}
