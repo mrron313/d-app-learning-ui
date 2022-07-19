@@ -156,6 +156,8 @@ body {
   background: #fff;
   gap: 50px;
   padding: 50px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .userDetailsLeft {
