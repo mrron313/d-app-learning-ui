@@ -1,8 +1,12 @@
+body {
+  background: linear-gradient(134.92deg, #F3DD9E -16.08%, #ffcac9 76.85%) fixed;
+}
+
 /* 
   Layout Design
 */
 .layout {
-  padding: 30px 280px;
+  padding: 10px 280px;
 }
 
 
@@ -69,24 +73,26 @@
   list-style-type: none;
   margin: 0px;
   padding: 0px;
+  width: 100%;
 }
 
 .sidebar ul li {
-  margin: 40px 0px;
+  margin: 20px 0px;
+  padding: 12px 0px;
+  text-align: center;
+}
+
+.activeSidebarMenu {
+  background: linear-gradient(104.08deg, #FECE76 -28.92%, #F78B88 76.85%);
+  border-radius: 100px;
 }
 
 .sidebar ul li a {
   text-decoration: none;
   color: #32363C;
-  padding: 8px 56px;
-  min-width: 116px;
-  height: 18px;
 }
 
-.activeSidebarMenu {
-  background: linear-gradient(104.08deg, #FECE76 -28.92%, #F78B88 76.85%);
-  box-shadow: 0px 13px 39px rgb(247 143 138 / 47%);
-  border-radius: 15px;
+.activeSidebarMenu a{
   color: #fff!important;
 }
 
@@ -100,7 +106,6 @@
 }
 
 .inner-div {
-  border-radius: 5px;
   font-weight: 400;
   color: #071011;
   font-size: 1rem;
@@ -116,9 +121,7 @@
 .front {
   cursor: pointer;
   height: 100%;
-  background: #fff;
   backface-visibility: hidden;
-  border-radius: 5px;
 }
 
 .front__bkg-photo {
@@ -129,8 +132,6 @@
   background-size: cover;
   backface-visibility: hidden;
   overflow: hidden;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
 }
 
 .front__face-photo {
@@ -149,10 +150,12 @@
 
 .userDetails {
   position: relative;
-  top: -200px;
+  top: -244px;
   text-align: center;
   display: flex;
+  background: #fff;
   gap: 50px;
+  padding: 50px;
 }
 
 .userDetailsLeft {
@@ -258,7 +261,29 @@
 
 
 
-/* Tranding News */
+/* Inivation */
+.inviationHeaderTitle {
+  font-size: 30px;
+  line-height: 150%;
+  color: #272727;
+}
+
+.inviationHeaderTitle {
+  font-size: 30px;
+  line-height: 150%;
+  color: #272727;
+}
+
+.inviationSectionTitle {
+  font-size: 25px;
+  line-height: 150%;
+  color: #272727;
+}
+
+.invitationSentSection{
+  margin-top: 40px!important;
+}
+
 .invitationCard {
   box-sizing: border-box;
   width: 995px;
