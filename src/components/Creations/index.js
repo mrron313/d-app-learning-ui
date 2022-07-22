@@ -7,7 +7,7 @@ const Creations = () => {
     <Grid container>
 
       <Grid item xs={12}>
-        <Typography className='inviationHeaderTitle' variant='h5'>MY COLLECTIONS</Typography>
+        <Typography className='inviationHeaderTitle' variant='h6'>MY COLLECTIONS</Typography>
       </Grid>
 
       {[1, 2, 3].map(i => {
@@ -19,7 +19,7 @@ const Creations = () => {
       })}
 
       <Grid item xs={9}>
-        <Typography className='inviationHeaderTitle invitationSentSection' variant='h5'>TRENDING COLLECTIONS</Typography>
+        <Typography className='inviationHeaderTitle invitationSentSection' variant='h6'>TRENDING COLLECTIONS</Typography>
 
         {[1, 2, 3].map(i => {
           return (

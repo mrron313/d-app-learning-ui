@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(134.92deg, #F3DD9E -16.08%, #ffcac9 76.85%) fixed;
+  background: linear-gradient(to bottom, #F3DD9E -20.08%, #ffcac9 40.85%, #fff) fixed;
 }
 
 /* 
@@ -272,7 +272,7 @@ body {
 }
 
 .inviationSectionTitle {
-  font-size: 25px;
+  font-size: 22px;
   line-height: 150%;
   color: #272727;
 }
@@ -298,7 +298,7 @@ body {
 }
 
 .invitationCardLeftText h6 {
-  font-size: 20px;
+  font-size: 19px;
   color: #272727;
   margin-bottom: 5px;
 }
@@ -385,9 +385,9 @@ body {
 
 /* Footer */
 .footerSection {
-  border: 1px solid #EFEFEF;
+  border-top: 1px solid #d5d1d1;
   padding: 10px 280px;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .footerText {
   font-family: 'Gilroy-Medium';
