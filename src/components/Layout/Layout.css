@@ -268,12 +268,7 @@ body {
   font-size: 30px;
   line-height: 150%;
   color: #272727;
-}
-
-.inviationHeaderTitle {
-  font-size: 30px;
-  line-height: 150%;
-  color: #272727;
+  font-weight: 500!important;
 }
 
 .inviationSectionTitle {
@@ -305,13 +300,13 @@ body {
 .invitationCardLeftText h6 {
   font-size: 20px;
   color: #272727;
+  margin-bottom: 5px;
 }
 
 .invitationCardLeftText span {
   font-size: 16px;
   color: #32363C;
   font-weight: 300;
-  margin-top: 20px;
 }
 
 .invitationCardLeftButton .chipPreview {
@@ -372,4 +367,16 @@ body {
   border-radius: 12px!important;
   color: #fff!important;
   margin-top: 7px;
+}
+
+
+
+
+
+
+/* Collection */
+.collectionCardLeftText {
+  height: 80px;
+  margin: 8px;
+  border-right: 1.45649px solid #EEF0F3;
 }
