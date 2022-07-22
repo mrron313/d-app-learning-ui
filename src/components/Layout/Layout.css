@@ -377,6 +377,21 @@ body {
 /* Collection */
 .collectionCardLeftText {
   height: 80px;
-  margin: 8px;
+  margin: 10px;
   border-right: 1.45649px solid #EEF0F3;
+}
+
+
+
+/* Footer */
+.footerSection {
+  border: 1px solid #EFEFEF;
+  padding: 10px 280px;
+  margin-top: 50px;
+}
+.footerText {
+  font-family: 'Gilroy-Medium';
+  font-size: 16px;
+  line-height: 45px;
+  color: #32363C;
 }

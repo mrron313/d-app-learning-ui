@@ -13,14 +13,23 @@ const Creations = () => {
       {[1, 2, 3].map(i => {
         return (
           <Grid item xs={12} style={{ marginTop: '10px' }}>
-            <CollectionCard />
+            <CollectionCard interactionBtns={true} />
           </Grid>
         );
       })}
 
-      <Grid item xs={12} className='invitationSentSection'>
-        <Typography className='inviationSectionTitle' variant='h6'>Sent</Typography>
+      <Grid item xs={9}>
+        <Typography className='inviationHeaderTitle invitationSentSection' variant='h5'>TRENDING COLLECTIONS</Typography>
+
+        {[1, 2, 3].map(i => {
+          return (
+            <Grid item xs={12} style={{ marginTop: '10px' }}>
+              <CollectionCard interactionBtns={false} />
+            </Grid>
+          );
+        })}
       </Grid>
+
 
     </Grid>
   );

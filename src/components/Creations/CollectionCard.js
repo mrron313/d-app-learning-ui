@@ -1,10 +1,13 @@
 import { Chip, Grid, Typography } from "@mui/material";
 import CreationCard from '../../assets/creation-card.png';
 
-function InvitationCard() {
+function InvitationCard(props) {
+
+  const { interactionBtns } = props;
+
   return (
     <Grid container className="invitationCard">
-      <Grid item xs={6.5}>
+      <Grid item xs={interactionBtns? 6.5 : 9}>
         <div className="invitationCardLeft">
           <div className="invitationCardLeftImage">
             <img width='130' src={CreationCard} />
@@ -24,7 +27,7 @@ function InvitationCard() {
           </div>
         </div>
       </Grid>
-      <Grid item xs={5.5}>
+      <Grid item xs={interactionBtns? 5.5 : 3}>
         <div className="invitationCardRight">
           <div className="invitationCardRightUser">
             <Typography variant='h6'>
@@ -34,9 +37,12 @@ function InvitationCard() {
               2022-01-01 00:00:00
             </Typography>
           </div>
-          <div className="invitationCardRightButton">
 
-          </div>
+          {interactionBtns && (
+            <div className="invitationCardRightButton">
+
+            </div>
+          )}
         </div>
       </Grid>
     </Grid>

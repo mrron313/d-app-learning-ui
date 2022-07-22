@@ -9,24 +9,27 @@ import TrandingNews from '../TrandingNews/index';
 
 function MainLayout({ children }) {
   return (
-    <Grid className='layout'>
-      <Header />
-      <Grid container spacing={4}>
-        <Grid item xs={2.5}>
-          <SideBar /> 
-        </Grid>
-        <Grid item xs={9.5}>
-          <Grid container>
-            <Grid item xs={12}>
-              {children}
-            </Grid>
-            <Grid item xs={12}>
-              <TrandingNews />
+    <>
+      <Grid className='layout'>
+        <Header />
+        <Grid container spacing={4}>
+          <Grid item xs={2.5}>
+            <SideBar /> 
+          </Grid>
+          <Grid item xs={9.5}>
+            <Grid container>
+              <Grid item xs={12}>
+                {children}
+              </Grid>
+              <Grid item xs={12}>
+                <TrandingNews />
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
       </Grid>
-    </Grid>
+      <Footer />
+    </>
   );
 }
 
