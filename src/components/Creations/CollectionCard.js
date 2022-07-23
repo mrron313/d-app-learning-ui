@@ -1,7 +1,7 @@
 import { Chip, Grid, Typography } from "@mui/material";
-import CreationCard from '../../assets/creation-card.png';
+import CreationCardImg from '../../assets/creation-card.png';
 
-function InvitationCard(props) {
+function CollectionCard(props) {
 
   const { interactionBtns } = props;
 
@@ -10,7 +10,7 @@ function InvitationCard(props) {
       <Grid item xs={interactionBtns? 6.5 : 9}>
         <div className="invitationCardLeft">
           <div className="invitationCardLeftImage">
-            <img width='130' src={CreationCard} />
+            <img alt='collection-card' width='130' src={CreationCardImg} />
           </div>
           <div className="invitationCardLeftText collectionCardLeftText">
             <Typography variant='h6'>
@@ -49,4 +49,4 @@ function InvitationCard(props) {
   );
 }
 
-export default InvitationCard;
+export default CollectionCard;

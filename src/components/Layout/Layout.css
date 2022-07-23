@@ -383,6 +383,70 @@ body {
 
 
 
+
+
+/* Course */
+.courseCard {
+  height: 220px;
+  margin-top: 15px;
+}
+
+.courseCardLeftText {
+  padding: 15px 0px;
+}
+
+.courseCardLeftText h6 {
+  font-size: 25px;
+}
+
+.courseCardLeftText span {
+  display: block;
+}
+
+.courseCardLeftText button {
+  background: linear-gradient(104.08deg, #FECE76 -28.92%, #F78B88 76.85%);
+  box-shadow: 0px 13px 39px rgba(247, 143, 138, 0.47);
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 15px;
+  height: 45px;
+}
+
+
+
+/* Top Learner */
+.topLearnerCard {
+  height: 70px;
+  margin-top: 15px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.topLearnerCardLeftText{
+  padding: 0px;
+}
+
+.topLearnerCardLeftText h6{
+  padding: 0px;
+  line-height: 1.2;
+}
+
+
+
+
+/* Latest News Card */
+.latestNewsCard {
+  padding: 0px;
+  margin-top: 15px;
+}
+
+.latestNewsCardLeftText {
+  padding: 15px;
+}
+
+
+
+
 /* Footer */
 .footerSection {
   border-top: 1px solid #d5d1d1;
@@ -394,4 +458,52 @@ body {
   font-size: 16px;
   line-height: 45px;
   color: #32363C;
+}
+
+
+
+/* Slider */
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+.slide img {
+  margin: 0 auto;
+}
+
+.slide {
+  transform: scale(0.2);
+  transition: transform 300ms;
+  opacity: 0.8;
+}
+
+.activeSlide {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.arrow {
+  background: #F78F8A;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  color: #fff;
+  padding: 8px;
+  border-radius: 60%;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow svg {
+  transition: color 300ms;
+}
+
+.next {
+  right: 0%;
+  top: 50%;
+}
+
+.prev {
+  left: 0%;
+  top: 50%;
 }

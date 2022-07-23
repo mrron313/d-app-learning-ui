@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import logo from "../../assets/logo.png";
 import icon1 from "../../assets/icon-1.png";
 import icon2 from "../../assets/icon-2.png";
-import user from "../../assets/user.png";
 
 import { Grid, TextField } from '@mui/material';
 import { Link } from 'react-router-dom';
