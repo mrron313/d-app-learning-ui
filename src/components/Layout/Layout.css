@@ -100,8 +100,9 @@ body {
   padding: 20px;
   display: flex;
   background: #FAFBFC;
-  min-height: 280px;
+  min-height: 300px;
   border-radius: 25px;
+  width: 85%;
   margin-top: 41px;
 }
 
@@ -109,12 +110,12 @@ body {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
-  width: 100%;
+  width: 95%;
 }
 
 .sidebar ul li {
   margin: 20px 0px;
-  padding: 12px 30px;
+  padding: 10px 20px;
 }
 
 .activeSidebarMenu {
@@ -125,13 +126,13 @@ body {
 .sidebar ul li a {
   text-decoration: none;
   color: #32363C;
-  height: 20px;
 }
 
-.sidebar ul li a img{
-  top: 5px;
+.sidebar ul li a img {
+  top: 6px;
   position: relative;
   margin-right: 15px;
+  margin-left: 10px;
 }
 
 .activeSidebarMenu a {
