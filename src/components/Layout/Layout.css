@@ -56,6 +56,25 @@ body {
 
 
 
+/* 
+  Header Menu Design
+*/
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.menu ul li {
+  padding: 12px 0px;
+}
+
 
 
 /* 

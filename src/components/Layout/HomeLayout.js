@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Footer from './Footer';
-import Header from './Header';
+import HomeHeader from './HomeHeader';
 
 import './Layout.css';
 import { Grid } from '@mui/material';
@@ -9,7 +9,7 @@ function HomeLayout({ children }) {
   return (
     <>
       <Grid className='layout'>
-        <Header />
+        <HomeHeader />
         <Grid container spacing={4}>
           <Grid item xs={12}>
             {children}

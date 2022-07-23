@@ -62,7 +62,7 @@ const Home = () => {
       
         {[1, 2, 3].map((card) => (
           <CourseCard />
-        ))};
+        ))}
       </Grid>
 
       <Grid item xs={3}>
@@ -70,7 +70,7 @@ const Home = () => {
         
         {[1, 2, 3, 4, 5].map((card) => (
           <TopLearnerCard  />
-        ))};
+        ))}
       </Grid>
 
       <Grid item xs={4}>
@@ -78,7 +78,7 @@ const Home = () => {
           
           {[1, 2, 3, 4, 5].map((card) => (
             <LatestNewsCard  />
-          ))};
+          ))}
         </Grid>
     </Grid>
    );

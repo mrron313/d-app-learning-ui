@@ -5,22 +5,35 @@ import icon1 from "../../assets/icon-1.png";
 import icon2 from "../../assets/icon-2.png";
 
 import { Grid, TextField } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-function Header() {
+function HomeHeader() {
+  const location = useLocation();
+
   return (
     <Grid container className='header'>
       <Grid item xs={2}>
-        <Link to="/"><img src={logo} /></Link>
+        <Link to="/"><img alt='logo' src={logo} /></Link>
       </Grid>
 
-      <Grid item xs={7} >
+      <Grid item xs={4} >
         <TextField variant="standard"
           InputProps={{
             disableUnderline: true,
             style: { padding: '10px' },
           }}
           className='searchBar' fullWidth label="Search for online course" id="fullWidth" />
+      </Grid>
+
+      <Grid item xs={3}>
+        <div className="menu">
+          <ul>
+            <li className={location.pathname === '/creations'? 'activeSidebarMenu' : ''}><Link  to='/creations'>Creations</Link></li>
+            <li className={location.pathname === '/invitation'? 'activeSidebarMenu' : ''} ><Link to='/invitation'>Invitation</Link></li>
+            <li className={location.pathname === '/court'? 'activeSidebarMenu' : ''} ><Link to='/court'>Court</Link></li>
+            <li className={location.pathname === '/wallet'? 'activeSidebarMenu' : ''} ><Link to='/wallet'>Wallet</Link></li>
+          </ul>
+        </div>
       </Grid>
 
       <Grid item xs={3} className='headerMenu'>
@@ -34,4 +47,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HomeHeader;
