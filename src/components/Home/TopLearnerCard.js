@@ -1,5 +1,5 @@
 import { Grid, Typography } from "@mui/material";
-import CourseCardImg1 from '../../assets/course-card1.png';
+import TopLearnerImg1 from '../../assets/top-learner-user.png';
 
 function TopLearnerCard(props) {
 
@@ -7,8 +7,8 @@ function TopLearnerCard(props) {
     <Grid container className="invitationCard topLearnerCard">
       <Grid item xs={12}>
         <div className="invitationCardLeft">
-          <div className="invitationCardLeftImage">
-            <img alt='course-card' width='50' src={CourseCardImg1} />
+          <div className="invitationCardLeftImage topLearnerCardLeftImage">
+            <img alt='course-card' width='50' src={TopLearnerImg1} />
           </div>
           <div className="invitationCardLeftText topLearnerCardLeftText">
             <Typography variant='h6'>

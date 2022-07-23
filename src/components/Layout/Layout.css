@@ -77,9 +77,9 @@ body {
 .menu ul li a {
   text-decoration: none;
   color: #32363C;
-  font-family: 'Gilroy-SemiBold';
   font-size: 18px;
   line-height: 150%;
+  font-weight: 400;
 }
 
 
@@ -457,6 +457,9 @@ body {
   line-height: 1.2;
 }
 
+.topLearnerCardLeftImage img {
+  border-radius: 11.9162px;
+}
 
 
 
