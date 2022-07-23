@@ -12,7 +12,7 @@ function HomeHeader() {
 
   return (
     <Grid container className='header'>
-      <Grid item xs={2}>
+      <Grid item xs={2} className='logoContainer'>
         <Link to="/"><img alt='logo' src={logo} /></Link>
       </Grid>
 

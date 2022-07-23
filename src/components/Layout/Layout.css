@@ -9,7 +9,7 @@ body {
   Layout Design
 */
 .layout {
-  padding: 10px 280px;
+  padding: 10px 250px;
 }
 
 
@@ -23,6 +23,11 @@ body {
   margin-bottom: 40px;
 }
 
+.header .logoContainer img {
+  width: 210px;
+  margin: 39px 0px;
+}
+
 .searchBar {
   margin-top: 50px !important;
   width: 400px!important;
@@ -32,6 +37,7 @@ body {
   border: 1.50117px solid rgba(43, 0, 212, 0.06);
   border-radius: 15px;
   border: none;
+  margin-left: 10px !important;
 
 }
 
@@ -367,7 +373,6 @@ body {
 }
 
 .invitationCardRightUser h6 {
-  font-family: 'Gilroy-Regular';
   font-size: 16px;
   line-height: 150%;
   color: #272727;
@@ -487,7 +492,6 @@ body {
   margin-top: 70px;
 }
 .footerText {
-  font-family: 'Gilroy-Medium';
   font-size: 16px;
   line-height: 45px;
   color: #32363C;
