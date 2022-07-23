@@ -22,17 +22,18 @@ body {
 
 .searchBar {
   margin-top: 40px !important;
-  width: 684px!important;
-  height: 50px;
+  width: 400px!important;
+  height: 40px;
   box-sizing: border-box;
   background: #F5F9FD;
   border: 1.50117px solid rgba(43, 0, 212, 0.06);
   border-radius: 15px;
   border: none;
+
 }
 
 .searchBar label {  
-  padding: 10px;
+  padding: 4px 12px;
   top: -15px;
 }
 
@@ -59,20 +60,26 @@ body {
 /* 
   Header Menu Design
 */
-.menu {
-  display: flex;
-  flex-direction: row;
-}
-
 .menu ul {
   list-style-type: none;
-  margin: 0px;
+  margin: 40px 10px;
   padding: 0px;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
 
 .menu ul li {
   padding: 12px 0px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #32363C;
+  font-family: 'Gilroy-SemiBold';
+  font-size: 18px;
+  line-height: 150%;
 }
 
 
