@@ -114,8 +114,7 @@ body {
 
 .sidebar ul li {
   margin: 20px 0px;
-  padding: 12px 0px;
-  text-align: center;
+  padding: 12px 30px;
 }
 
 .activeSidebarMenu {
@@ -126,9 +125,16 @@ body {
 .sidebar ul li a {
   text-decoration: none;
   color: #32363C;
+  height: 20px;
 }
 
-.activeSidebarMenu a{
+.sidebar ul li a img{
+  top: 5px;
+  position: relative;
+  margin-right: 15px;
+}
+
+.activeSidebarMenu a {
   color: #fff!important;
 }
 
@@ -313,7 +319,7 @@ body {
   color: #272727;
 }
 
-.invitationSentSection{
+.invitationSentSection {
   margin-top: 40px!important;
 }
 
@@ -524,8 +530,8 @@ body {
   background: #F78F8A;
   transform: matrix(-1, 0, 0, 1, 0, 0);
   color: #fff;
-  padding: 8px;
-  border-radius: 60%;
+  padding: 6px 9px 3px 10px;
+  border-radius: 50%;
   position: absolute;
   cursor: pointer;
   z-index: 10;
