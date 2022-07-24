@@ -4,8 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { ThemeProvider, createTheme } from '@mui/material/styles'; 
+
+const theme = createTheme({
+  typography: {
+    allVariants: {
+      fontFamily: 'Gliroy',
+      textTransform: 'none',
+      fontSize: 16,
+    },
+  },
+});
+
+
 ReactDOM.render(
-  <App />,
+  <ThemeProvider theme={theme}>
+    <App />
+  </ThemeProvider>,
   document.getElementById('root')
 );
 

@@ -12,10 +12,18 @@ function SideBar() {
     <div className="sidebar">
       <ul>
         {/* <li className={location.pathname === '/course'? 'activeSidebarMenu' : ''}><Link  to='/course'><img alt="menu-icon" src={MenuIcon1} /> Course </Link></li> */}
-        <li className={location.pathname === '/creations'? 'activeSidebarMenu' : ''}><Link  to='/creations'><img alt="menu-icon" src={MenuIcon2} /> Creations</Link></li>
-        <li className={location.pathname === '/invitation'? 'activeSidebarMenu' : ''} ><Link to='/invitation'><img alt="menu-icon" src={MenuIcon3} />Invitation</Link></li>
-        <li className={location.pathname === '/court'? 'activeSidebarMenu' : ''} ><Link to='/court'><img alt="menu-icon" src={MenuIcon4} /> Litigation</Link></li>
-        <li className={location.pathname === '/wallet'? 'activeSidebarMenu' : ''} ><Link to='/wallet'><img alt="menu-icon" src={MenuIcon5} /> Wallet</Link></li>
+        <li className={location.pathname === '/creations'? 'activeSidebarMenu' : ''}>
+          <Link  to='/creations'><img alt="menu-icon" src={MenuIcon2} /> <span>Creations</span> </Link>
+        </li>
+        <li className={location.pathname === '/invitation'? 'activeSidebarMenu' : ''} >
+          <Link to='/invitation'><img alt="menu-icon" src={MenuIcon3} /><span>Invitation</span></Link>
+        </li>
+        <li className={location.pathname === '/court'? 'activeSidebarMenu' : ''} >
+          <Link to='/court'><img alt="menu-icon" src={MenuIcon4} /> <span>Litigation</span></Link>
+        </li>
+        <li className={location.pathname === '/wallet'? 'activeSidebarMenu' : ''} >
+          <Link to='/wallet'><img alt="menu-icon" src={MenuIcon5} />  <span>Wallet</span> </Link>
+        </li>
       </ul>
     </div>
   );

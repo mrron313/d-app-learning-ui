@@ -1,8 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;800&display=swap');
+@font-face {
+  font-family: 'Gliroy';
+  src: local('Gliroy'), url(../../fonts/Gilroy-Bold.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Gliroy';
+    font-weight: 300;
+    src: local('Gliroy'), url(../../fonts/Gilroy-Light.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Gliroy';
+    font-weight: 500;
+    src: local('Gliroy'), url(../../fonts/Gilroy-Medium.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Gliroy';
+  font-weight: 400;
+  src: local('Gliroy'), url(../../fonts/Gilroy-Regular.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Gliroy';
+  font-weight: 700;
+  src: local('Gliroy'), url(../../fonts/Gilroy-Semibold.ttf) format('opentype');
+}
+
 
 body {
   background: linear-gradient(to bottom, #F3DD9E -20.08%, #ffcac9 40.85%, #fff) fixed;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Gliroy', sans-serif !important;
 }
 
 /* 
@@ -38,7 +66,7 @@ body {
   border-radius: 15px;
   border: none;
   margin-left: 10px !important;
-
+color: #32363C;
 }
 
 .searchBar label {  
@@ -103,7 +131,7 @@ body {
   min-height: 300px;
   border-radius: 25px;
   width: 85%;
-  margin-top: 41px;
+  margin-top: 55px;
 }
 
 .sidebar ul {
@@ -121,6 +149,7 @@ body {
 .activeSidebarMenu {
   background: linear-gradient(104.08deg, #FECE76 -28.92%, #F78B88 76.85%);
   border-radius: 100px;
+  box-shadow: 0px 13px 39px rgba(247, 143, 138, 0.47);
 }
 
 .sidebar ul li a {
@@ -128,11 +157,16 @@ body {
   color: #32363C;
 }
 
-.sidebar ul li a img {
-  top: 6px;
+.sidebar ul li a img {  
+  top: 4px;
   position: relative;
   margin-right: 15px;
   margin-left: 10px;
+}
+
+.sidebar ul li a span {
+  top: -3px;
+  position: relative;
 }
 
 .activeSidebarMenu a {
@@ -146,7 +180,7 @@ body {
 .inner-div {
   height: 600px;
   position: relative;
-  margin-top: 41px;
+  margin-top: 55px;
 }
 
 .inner-div {
@@ -213,7 +247,7 @@ body {
 }
 
 .userDetailsLeftHeader {
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 
 .userDetailsLeftHeader h4 {
@@ -309,10 +343,9 @@ body {
 
 /* Inivation */
 .inviationHeaderTitle {
-  font-size: 30px;
-  line-height: 150%;
+  font-size: 28px!important;
   color: #272727;
-  font-weight: 500!important;
+  font-weight: 700!important;
 }
 
 .inviationSectionTitle {
@@ -551,4 +584,166 @@ body {
 .prev {
   left: 0%;
   top: 50%;
+}
+
+
+
+
+
+
+
+/** Create Collection **/
+.createCollectionBox {
+  width: 100%;
+  height: 470px;
+  left: 397px;
+  top: 243px;
+  margin-top: 10px;
+  background: #FFFFFF;
+  border: 1px solid #EBEFF0;
+  padding: 59px 60px;
+  border-radius: 15px;
+}
+
+.collectionBoxStep2 {
+  background: transparent;
+  box-sizing: border-box;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.28);
+  border: 2px dashed #F78F8A;
+  border-radius: 15px;
+}
+
+.collectionFieldTitle {
+  font-weight: 700!important;
+  font-size: 16px!important;
+  line-height: 21px!important;
+  color: #272727!important;
+  align-items: center;
+  display: flex;
+  margin-top: 13px!important;
+}
+
+.leftCollectionTitle {
+  margin-left: 40px!important;
+}
+
+.collectionField {
+  height: 50px;
+  background: #F5F9FD;
+  border-radius: 15px;
+  border: none;
+}
+
+.collectionDesc {
+  height: 110px;
+}
+
+.inviteButton {
+  width: 150px;
+  height: 50px;
+  background: linear-gradient(104.08deg, #FECE76 -28.92%, #F78B88 76.85%);
+  box-shadow: 0px 13px 39px rgba(247, 143, 138, 0.47);
+  border-radius: 15px;
+  color: #fff!important;
+  border-radius: 15px!important;
+  margin-left: 20px!important;
+}
+
+.collectionStoreBoxFields {
+  margin-top: 20px!important;
+}
+
+.qrSectionDiv {
+  margin-left: 40px!important;
+}
+
+.qrSection {
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  background: #F5F9FD;
+  border: 1px solid rgba(39, 39, 39, 0.24);
+  border-radius: 15px;
+}
+
+.qrCodeTitle {
+  width: 144px;
+  height: 22px;
+  font-weight: 700!important;
+  font-size: 18px!important;
+  line-height: 21px!important;
+  color: #272727!important;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.qrSection img {
+  width: 270px;
+  height: 267px;
+  margin: 15px;
+}
+
+.transparentGreenButton {
+  box-sizing: border-box;
+  width: 150px;
+  height: 50px;
+  background: #F5F9FD!important;
+  border: 1px solid #6FD14C!important;
+  border-radius: 15px!important;
+}
+
+.signInCollectionButton {
+  margin-right: 10px!important;
+}
+
+.transparentGreenVerificationButton {
+  width: 180px;
+}
+
+.transparentGreenVerificationButton span {
+  margin-left: 20px!important;
+}
+
+.transparentGreenButton img {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+}
+
+.humanCheckbox {
+  box-sizing: border-box;
+  width: 200px;
+  height: 80px;
+  background: #F5F9FD!important;
+  border: 1px solid rgba(39, 39, 39, 0.24)!important;
+  border-radius: 12px!important;
+  display: flex;
+  justify-content: center;
+}
+
+.collectionButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px!important;
+}
+
+.nextCollectionButton {
+  width: 150px;
+  height: 50px;
+  background: linear-gradient(104.08deg, #FECE76 -28.92%, #F78B88 76.85%);
+  box-shadow: 0px 13px 39px rgba(247, 143, 138, 0.47);
+  color: #fff!important;
+  border-radius: 15px!important;
+}
+
+.backCollectionButton {
+  box-sizing: border-box;
+  width: 150px;
+  height: 50px;
+  border: 2px solid #F78F8A!important;
+  color: #F78F8A!important;
+  border-radius: 15px!important;
 }

@@ -11,7 +11,7 @@ function TrandingNews() {
       <Grid item xs={12}>
         <div className="trandingNewsCard">
           <div className="trandingNewsCardImage">
-            <img src={TrandingNewsImage} />
+            <img alt="trending-news-img" src={TrandingNewsImage} />
           </div>
 
           <div className="trandingNewsCardText">

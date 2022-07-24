@@ -5,9 +5,8 @@ import CollectionCard from './CollectionCard';
 const Creations = () => {
   return ( 
     <Grid container>
-
       <Grid item xs={12}>
-        <Typography className='inviationHeaderTitle' variant='h6'>MY COLLECTIONS</Typography>
+        <Typography className='inviationHeaderTitle' variant='h6'>My Collection</Typography>
       </Grid>
 
       {[1, 2, 3].map(i => {
@@ -19,7 +18,7 @@ const Creations = () => {
       })}
 
       <Grid item xs={9}>
-        <Typography className='inviationHeaderTitle invitationSentSection' variant='h6'>TRENDING COLLECTIONS</Typography>
+        <Typography className='inviationHeaderTitle invitationSentSection' variant='h6'>Trending Collections</Typography>
 
         {[1, 2, 3].map(i => {
           return (
@@ -29,8 +28,6 @@ const Creations = () => {
           );
         })}
       </Grid>
-
-
     </Grid>
   );
 }

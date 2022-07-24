@@ -10,6 +10,7 @@ import Court from './components/Court';
 import Wallet from './components/Wallet';
 import MainLayout from "./components/Layout";
 import HomeLayout from "./components/Layout/HomeLayout";
+import CreateCollection from "./components/Creations/CreateCollection";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/invitation" element={<MainLayout><Invitation /></MainLayout>} />
           <Route path="/court" element={<MainLayout><Court /></MainLayout>} />
           <Route path="/wallet" element={<MainLayout><Wallet /></MainLayout>} />
+          <Route path="/create-collection" element={<MainLayout><CreateCollection /></MainLayout>} />
       </Routes>
     </BrowserRouter>
   );

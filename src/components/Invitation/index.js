@@ -7,7 +7,7 @@ const Invitation = () => {
     <Grid container>
 
       <Grid item xs={12}>
-        <Typography className='inviationHeaderTitle' variant='h6'>INVITATION</Typography>
+        <Typography className='inviationHeaderTitle' variant='h6'>Invitation</Typography>
       </Grid>
 
       <Grid item xs={12} style={{ marginTop: '10px' }}>

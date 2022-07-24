@@ -58,7 +58,7 @@ const Home = () => {
       </Grid>
 
       <Grid item xs={5}>
-        <Typography className='inviationHeaderTitle' variant='h6'>TRENDING COURSES</Typography>
+        <Typography className='inviationHeaderTitle' variant='h6'>Trending Collections</Typography>
       
         {[1, 2, 3].map((card) => (
           <CourseCard />
@@ -66,7 +66,7 @@ const Home = () => {
       </Grid>
 
       <Grid item xs={3}>
-        <Typography className='inviationHeaderTitle' variant='h6'>TOP LEARNERS</Typography>
+        <Typography className='inviationHeaderTitle' variant='h6'>Top Learner</Typography>
         
         {[1, 2, 3, 4, 5].map((card) => (
           <TopLearnerCard  />
@@ -74,7 +74,7 @@ const Home = () => {
       </Grid>
 
       <Grid item xs={4}>
-        <Typography className='inviationHeaderTitle' variant='h6'>LATEST NEWS</Typography>
+        <Typography className='inviationHeaderTitle' variant='h6'>Latest News</Typography>
           
           {[1, 2, 3, 4, 5].map((card) => (
             <LatestNewsCard  />

@@ -1,7 +1,14 @@
 import { Grid, Button, Chip, Typography } from '@mui/material';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Wallet = () => {
+  const navigate = useNavigate();
+  
+  const handleClickNewCollection = () => {
+    navigate('/create-collection');
+  };
+
   return ( 
     <div>
       <div className="inner-div">
@@ -25,8 +32,8 @@ const Wallet = () => {
                   View My Collections
                 </Button>
 
-                <Button className='collectionButton2'>
-                  Create a New Collection
+                <Button className='collectionButton2' onClick={handleClickNewCollection}>
+                    Create a New Collection
                 </Button>
               </Grid>
             </Grid>
