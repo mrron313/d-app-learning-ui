@@ -18,8 +18,8 @@ function SideBar() {
         <li className={location.pathname === '/invitation'? 'activeSidebarMenu' : ''} >
           <Link to='/invitation'><img alt="menu-icon" src={MenuIcon3} /><span>Invitation</span></Link>
         </li>
-        <li className={location.pathname === '/court'? 'activeSidebarMenu' : ''} >
-          <Link to='/court'><img alt="menu-icon" src={MenuIcon4} /> <span>Litigation</span></Link>
+        <li className={location.pathname === '/litigation'? 'activeSidebarMenu' : ''} >
+          <Link to='/litigation'><img alt="menu-icon" src={MenuIcon4} /> <span>Litigation</span></Link>
         </li>
         <li className={location.pathname === '/wallet'? 'activeSidebarMenu' : ''} >
           <Link to='/wallet'><img alt="menu-icon" src={MenuIcon5} />  <span>Wallet</span> </Link>

@@ -16,7 +16,10 @@ export default function StepTwo() {
                 <UserCard2 />
             </Grid>
 
-            <Grid xs={4} >
+            <Grid xs={4} justifyContent="center" container>
+                <div className='collectionStoreBoxFields'>
+                    <FormControlLabel control={<Checkbox />} label="Send Alart for pacific Reconciliation" />
+                </div>
                 <div className='humanCheckbox collectionStoreBoxFields'>
                     <FormControlLabel control={<Checkbox defaultChecked />} label="I’m human" />
                 </div>

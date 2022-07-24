@@ -254,6 +254,7 @@ color: #32363C;
 .userDetailsLeftHeader h4 {
   font-size: 25px;
   line-height: 30px;
+  font-weight: 700!important;
 }
 
 .userDetailsLeftHeader span {
@@ -273,6 +274,7 @@ color: #32363C;
   box-sizing: border-box;
   max-width: 260px !important;
   min-width: 260px !important;
+  font-weight: 700 !important;
   height: 45px;
   line-height: 24px;
   margin-top: 10px;
@@ -315,11 +317,11 @@ color: #32363C;
 /* Tranding News */
 
 .trandingNewsHeader h5 {
-  font-size: 28px;
-  color: #272727;
-  padding-bottom: 10px;
-  margin-top: 30px;
-  font-weight: 500;
+  font-size: 28px!important;
+  color: #272727!important;
+  padding-bottom: 10px!important;
+  margin-top: 30px!important;
+  font-weight: 700!important;
 }
 
 .trandingNewsCard {
@@ -364,9 +366,9 @@ color: #32363C;
 }
 
 .inviationSectionTitle {
-  font-size: 22px;
-  line-height: 150%;
-  color: #272727;
+  font-size: 18px!important;
+  font-weight: 700!important;
+  color: #272727!important;
 }
 
 .invitationSentSection {
@@ -671,6 +673,10 @@ color: #32363C;
 
 .qrSectionDiv {
   margin-left: 40px!important;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .qrSection {
@@ -692,7 +698,7 @@ color: #32363C;
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 10px!important;
 }
 
 .qrSection img {
@@ -828,10 +834,119 @@ color: #32363C;
 .userCard2 {
   color: #272727!important;
   background: #FFFEFE!important;
-  margin-left: 15px!important;
+  margin-left: 10px!important;
 }
 
 .userCard2 .userCardChips .chip {
   background: rgba(247, 143, 138, 0.1)!important;
   color: #F78F8A!important;
+}
+
+
+
+
+
+
+/* Litigation */
+
+.litigationBox {
+  box-sizing: border-box!important;
+  width: 100%;
+  height: 225px!important;
+  background: #FFFFFF!important;
+  border: 1px solid #EBEFF0!important;
+  border-radius: 20px!important;
+  border-spacing: 0px!important;
+  margin-top: 15px!important;
+}
+
+.litigationBoxHeader {
+  box-sizing: border-box;
+  height: 60px;
+  background: #F5F9FD;
+  border-radius: 20px!important;
+}
+
+.litigationBoxHeader th {
+  border: none !important;
+}
+
+.litigationBoxHeader th:first-child {
+  border-top-left-radius: 20px!important;
+}
+
+.litigationBoxHeader th:last-child {
+  border-top-right-radius: 20px!important;
+}
+
+.litigationBoxBody td {
+  text-align: center;
+  padding: 13px 18px;
+}
+
+.litigationBoxBody td:first {
+  border-bottom: 1px solid #32363C!important;
+}
+
+.withdrawButton {
+  width: 150px;
+  height: 50px;
+  background: #6C69FD!important;
+  border-radius: 15px!important;
+  color: #FFFFFF!important;
+}
+
+.approveButton {
+  width: 150px;
+  height: 50px;
+  background: #6FCD4C!important;
+  border-radius: 15px!important;
+  color: #FFFFFF!important;
+}
+
+.withdrawButton img, .approveButton img { 
+  padding-right: 10px!important;
+}
+
+.litigationUser {
+  display: flex;
+  gap: 10px;
+}
+
+.litigationUserImage img {
+  width: 40px;
+}
+
+.litigationUserText {
+  text-align: left;
+}
+
+.litigationUserText h6 {
+  padding: 0px;
+  margin: 2px 0px;
+  font-size: 15px;
+}
+
+.userClaimAuthorBox {
+  height: 300px;
+}
+
+.seeMoreButton {
+  box-sizing: border-box;
+  width: 140px;
+  height: 50px;
+  border: 2px solid #F78F8A!important;
+  color: #F78F8A!important;
+  border-radius: 15px!important;
+  margin-top: 80px!important;
+}
+
+.userClaimAuthorBox2 {
+  height: 400px;
+}
+
+.litigationCloseTitle {
+  font-size: 24px!important;
+  color: #272727;
+  font-weight: 700!important;
 }

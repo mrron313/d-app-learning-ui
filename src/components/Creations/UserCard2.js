@@ -1,15 +1,16 @@
 import { Chip, Typography } from '@mui/material';
 import React from 'react';
+import TopLearnerImg1 from '../../assets/top-learner-user.png';
 
 export default function UserCard() {
   return (
     <div className='userCard userCard2'>
         <div className='userCardImage'>
-            <img width={70} alt='user-image' src={'https://s3-us-west-2.amazonaws.com/s.cdpn.io/156905/profile/profile-512.jpg?1530296477'} />
+            <img width={70} alt='user-image' src={TopLearnerImg1} />
         </div>
 
         <div className='userCardDetails'>
-            <Typography variant='h6'>John Doe</Typography>
+            <Typography variant='h6'>Andrzej Smith</Typography>
             <Typography variant='span'>User experience designer</Typography>
 
             <div className='userCardChips'>

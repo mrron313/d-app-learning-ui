@@ -6,7 +6,8 @@ import {
 import Home from './components/Home';
 import Creations from './components/Creations';
 import Invitation from './components/Invitation';
-import Court from './components/Court';
+import Litigation from './components/Litigation';
+import LitigationClosed from './components/Litigation/LitigationClosed';
 import Wallet from './components/Wallet';
 import MainLayout from "./components/Layout";
 import HomeLayout from "./components/Layout/HomeLayout";
@@ -20,7 +21,8 @@ function App() {
           <Route path="/" element={<HomeLayout><Home /></HomeLayout>} />
           <Route path="/creations" element={<MainLayout><Creations /></MainLayout>} />
           <Route path="/invitation" element={<MainLayout><Invitation /></MainLayout>} />
-          <Route path="/court" element={<MainLayout><Court /></MainLayout>} />
+          <Route path="/litigation" element={<MainLayout><Litigation /></MainLayout>} />
+          <Route path="/litigation/closed" element={<MainLayout><LitigationClosed /></MainLayout>} />
           <Route path="/wallet" element={<MainLayout><Wallet /></MainLayout>} />
           <Route path="/scenario-1/create-collection" element={<MainLayout><CreateCollection1 /></MainLayout>} />
           <Route path="/scenario-2/create-collection" element={<MainLayout><CreateCollection2 /></MainLayout>} />
