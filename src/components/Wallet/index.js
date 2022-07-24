@@ -6,7 +6,7 @@ const Wallet = () => {
   const navigate = useNavigate();
   
   const handleClickNewCollection = () => {
-    navigate('/create-collection');
+    navigate('/scenario-1/create-collection');
   };
 
   return ( 

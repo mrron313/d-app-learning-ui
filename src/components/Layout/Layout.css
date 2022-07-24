@@ -623,7 +623,7 @@ color: #32363C;
 .collectionBoxStep2 {
   background: transparent;
   box-sizing: border-box;
-  height: 400px;
+  height: 330px;
   background: rgba(255, 255, 255, 0.28);
   border: 2px dashed #F78F8A;
   border-radius: 15px;
@@ -761,4 +761,77 @@ color: #32363C;
   border: 2px solid #F78F8A!important;
   color: #F78F8A!important;
   border-radius: 15px!important;
+}
+
+.createCollectionBoxScenario2 {
+  height: 600px;
+}
+
+.createCollectionBoxScenario2Step2 {
+  height: 620px;
+  padding: 40px 20px;
+}
+
+.authorField {
+  height: 160px;
+  padding: 20px;
+}
+
+
+
+
+
+/* User Card */
+.userCard {
+  width: 460px;
+  height: 120px;
+  background: linear-gradient(104.08deg, #FECE76 -28.92%, #F78B88 76.85%);
+  box-shadow: 0px 16.7655px 50.2966px rgba(247, 143, 138, 0.47);
+  border-radius: 20px;
+  display: flex;
+  padding: 20px 30px;
+  color: #FFFEFE!important;
+}
+
+.userCardImage img {
+  border-radius: 20px;
+}
+
+.userCardDetails {
+  margin-left: 30px;
+}
+
+.userCardDetails h6 {
+  font-size: 22px!important;
+}
+
+.userCardDetails span {
+  font-size: 16px!important;
+}
+
+.userCardChips {
+  margin-top: 10px!important;
+  display: flex;
+  gap: 15px;
+}
+
+.userCardChips .chip {
+  width: 155px;
+  height: 45px;
+  background: #FFFEFE!important;
+  color: #F78F8A!important;
+  border-radius: 12px!important;
+  font-size: 8px!important;
+  font-weight: 500;
+}
+
+.userCard2 {
+  color: #272727!important;
+  background: #FFFEFE!important;
+  margin-left: 15px!important;
+}
+
+.userCard2 .userCardChips .chip {
+  background: rgba(247, 143, 138, 0.1)!important;
+  color: #F78F8A!important;
 }
