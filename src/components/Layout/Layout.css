@@ -487,6 +487,10 @@ color: #32363C;
 
 
 /* Course */
+.homepageTitle {
+  font-size: 24px!important
+}
+
 .courseCard {
   height: 220px;
   margin-top: 15px;
