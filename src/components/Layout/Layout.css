@@ -38,6 +38,7 @@ body {
 */
 .layout {
   padding: 10px 250px;
+  min-height: 1020px;
 }
 
 
@@ -328,7 +329,18 @@ color: #32363C;
   background: #FFFFFF;
   border: 1px solid #EBEFF0;
   border-radius: 25px;
-  padding: 20px;
+  padding: 20px!important;
+}
+
+.trandingNewsCardText {
+  margin-top: 20px;
+}
+
+.trandingNewsCardTextTitle h6 {
+  font-size: 25px;
+  line-height: 29px;
+  color: #272727;
+  font-weight: 700;
 }
 
 .trandingNewsCardTextParagraph {
@@ -337,6 +349,9 @@ color: #32363C;
   color: #32363C;
 }
 
+.trandingNewsCardTextTime span {
+  color: #F78F8A;
+}
 
 
 
