@@ -86,11 +86,19 @@ color: #32363C;
   float: left;
 }
 
+.menuBox img {
+  background: #F5F9FD!important;
+  border-radius: 15px!important;
+  padding: 12px;
+  width: 20px;
+}
+
 .headerMenu li img {
   display: block;
   color: white;
   text-align: center;
   text-decoration: none;
+  width: 20px;
 }
 
 
