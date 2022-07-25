@@ -587,52 +587,23 @@ color: #32363C;
 @import "~slick-carousel/slick/slick-theme.css";
 
 
-.slide img {
-  margin: 0 auto;
-}
-
-.slide {
-  transform: scale(0.2);
-  transition: transform 300ms;
-  opacity: 0.8;
-}
-
-.activeSlide {
-  transform: scale(1.1);
-  opacity: 1;
-}
-
-.arrow {
-  background: #F78F8A;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-  color: #fff;
-  padding: 6px 9px 3px 10px;
-  border-radius: 50%;
+.rightIcon {
   position: absolute;
+  background-color: transparent;
+  border: none;
+  top: 40%;
+  right: 1.5%;
   cursor: pointer;
-  z-index: 10;
-  width: 30px!important;
 }
 
-.slick-arrow, .slick-prev { 
-  width: 30px!important; 
-  height: 30px!important; 
-} 
-
-.arrow svg {
-  transition: color 300ms;
+.leftIcon {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  top: 40%;
+  left: 2%;
+  cursor: pointer;
 }
-
-.next {
-  right: 0%;
-  top: 50%;
-}
-
-.prev {
-  left: 0%;
-  top: 50%;
-}
-
 
 
 
