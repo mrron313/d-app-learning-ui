@@ -3,6 +3,8 @@ import React from 'react';
 import CourseCard from './CourseCard';
 import LatestNewsCard from './LatestNewsCard';
 import TopLearnerCard from './TopLearnerCard';
+import RightIcon from '../../assets/right.png';
+import LeftIcon from '../../assets/left.png';
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import Slider from "react-slick";
 
@@ -40,8 +42,8 @@ const Home = () => {
     slidesToShow: 3,
     centerMode: true,
     centerPadding: 0,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    nextArrow: <img src={RightIcon} />,
+    prevArrow: <img src={LeftIcon} />,
     beforeChange: (current, next) => setImgIndex(next), 
   }
 

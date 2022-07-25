@@ -1,12 +1,21 @@
-import { Grid, Typography } from '@mui/material';
+import { Button, Grid, TextField, Typography } from '@mui/material';
 import React from 'react';
 import CollectionCard from './CollectionCard';
 
 const Creations = () => {
   return ( 
     <Grid container>
-      <Grid item xs={12}>
+      <Grid item xs={12} className='collectionTitleBox'>
         <Typography className='inviationHeaderTitle' variant='h6'>My Collection</Typography>
+        <div className='collectionTitleBox'>
+          <TextField variant="standard"
+            InputProps={{
+              disableUnderline: true,
+              style: { padding: '8px 17px', color: '#32363C' },
+            }}
+            className='searchBarCollection' fullWidth placeholder="Search" id="fullWidth" />
+          <Button className='collectionAddNew'>+ Add New</Button>
+        </div>
       </Grid>
 
       {[1, 2, 3].map(i => {

@@ -37,7 +37,7 @@ body {
   Layout Design
 */
 .layout {
-  padding: 10px 250px;
+  padding: 10px 120px;
   min-height: 1020px;
 }
 
@@ -84,6 +84,10 @@ color: #32363C;
 
 .headerMenu ul li {
   float: left;
+}
+
+.menuBox {
+  cursor: pointer;
 }
 
 .menuBox img {
@@ -492,7 +496,7 @@ color: #32363C;
 }
 
 .courseCard {
-  height: 220px;
+  height: 215px;
   margin-top: 15px;
 }
 
@@ -501,7 +505,8 @@ color: #32363C;
 }
 
 .courseCardLeftText h6 {
-  font-size: 25px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .courseCardLeftText span {
@@ -515,6 +520,7 @@ color: #32363C;
   color: #fff;
   margin-top: 15px;
   height: 45px;
+  width: 155px;
 }
 
 
@@ -528,12 +534,14 @@ color: #32363C;
 }
 
 .topLearnerCardLeftText{
-  padding: 0px;
+  padding: 5px 0px;
 }
 
 .topLearnerCardLeftText h6{
   padding: 0px;
   line-height: 1.2;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 .topLearnerCardLeftImage img {
@@ -549,7 +557,11 @@ color: #32363C;
 }
 
 .latestNewsCardLeftText {
-  padding: 15px;
+  padding: 20px 15px;
+}
+
+.latestNewsCardLeftText h6 {
+  font-weight: 700;
 }
 
 
@@ -599,7 +611,13 @@ color: #32363C;
   position: absolute;
   cursor: pointer;
   z-index: 10;
+  width: 30px!important;
 }
+
+.slick-arrow, .slick-prev { 
+  width: 30px!important; 
+  height: 30px!important; 
+} 
 
 .arrow svg {
   transition: color 300ms;
@@ -961,4 +979,146 @@ color: #32363C;
   font-size: 24px!important;
   color: #272727;
   font-weight: 700!important;
+}
+
+
+
+
+
+
+
+
+/* Credit Card */
+.topContributorSection {
+  box-sizing: border-box;
+  width: 100%;
+  height: 1024px;
+  background: #FFFFFF;
+  border: 1px solid #EBEFF0;
+  box-shadow: 0px 27px 58px rgba(84, 69, 68, 0.09);
+  border-radius: 25px;
+  margin-top: 10px!important;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+}
+
+.creditCard {
+  display: flex;
+  max-width: 50%;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.creditCardImage img {
+  box-sizing: border-box;
+  height: 197.56px;
+  background: linear-gradient(104.08deg, #FECE76 -28.92%, #F78B88 76.85%);
+  border: 2px solid #FFFFFF;
+  box-shadow: 0px 10px 40px rgba(247, 143, 138, 0.47);
+  border-radius: 55px;
+  height: 90%;
+}
+
+.otherContributorSection {
+  box-sizing: border-box;
+  width: 100%;
+  height: 1020px;
+  background: #FFFFFF;
+  border: 1px solid #EBEFF0;
+  box-shadow: 0px 27px 58px rgba(84, 69, 68, 0.09);
+  border-radius: 25px;
+  margin-top: 10px!important;
+  padding-top: 20px;
+}
+
+.creditCardDetials {
+  padding: 20px 0px;
+}
+
+.creditCardDetials h5 {
+  height: 28px;
+  font-size: 18px;
+  color: #272727;
+  font-weight: 600;
+}
+
+.creditCardDetials h6 {
+  height: 19px;
+  font-size: 14px;
+  line-height: 137.8%;
+  color: #32363C;
+  margin-bottom: 8px!important;
+}
+
+.creditCardDetials span {
+  width: 99px;
+  height: 19px;
+  font-size: 14px;
+  line-height: 137.8%;
+  color: #32363C;
+}
+
+.creditCardIcons {
+  margin: 20px 0px!important;
+  display: flex;
+  gap: 20px
+}
+
+.otherContributorCard {
+  display: flex;
+  gap: 20px;
+  padding: 8px 20px;
+}
+
+.otherContributorCard img {
+  width: 50px;
+  box-sizing: border-box;
+  height: 197.56px;
+  background: linear-gradient(104.08deg, #FECE76 -28.92%, #F78B88 76.85%);
+  border-radius: 10px;
+  height: 50px;
+}
+
+.otherContributorCardDetials h5 {
+  height: 28px;
+  font-size: 18px;
+  color: #272727;
+  font-weight: 600;
+}
+
+.otherContributorCardDetials h6 {
+  height: 19px;
+  font-size: 14px;
+  line-height: 137.8%;
+  color: #32363C;
+  margin-bottom: 8px!important;
+}
+
+
+
+/** Creations **/
+.collectionTitleBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchBarCollection {
+  box-sizing: border-box;
+  width: 300px!important;
+  height: 40px;
+  background: #F5F9FD;
+  border-radius: 15px;
+}
+
+.collectionAddNew {
+  margin-left: 20px!important;
+  width: 130px!important;
+  height: 40px!important;
+  background: linear-gradient(104.08deg, #FECE76 -28.92%, #F78B88 76.85%)!important;
+  box-shadow: 0px 13px 39px rgba(247, 143, 138, 0.47)!important;
+  border-radius: 13px!important;
+  color: #fff!important;
 }

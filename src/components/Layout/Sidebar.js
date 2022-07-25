@@ -4,6 +4,7 @@ import MenuIcon2 from "../../assets/book-icon.png";
 import MenuIcon3 from "../../assets/envelope-icon.png";
 import MenuIcon4 from "../../assets/bank-icon.png";
 import MenuIcon5 from "../../assets/wallet-icon.png";
+import MenuIcon6 from "../../assets/credit.png";
 
 function SideBar() {
   const location = useLocation();
@@ -23,6 +24,9 @@ function SideBar() {
         </li>
         <li className={location.pathname === '/wallet'? 'activeSidebarMenu' : ''} >
           <Link to='/wallet'><img alt="menu-icon" src={MenuIcon5} />  <span>Wallet</span> </Link>
+        </li>
+        <li className={location.pathname === '/credit'? 'activeSidebarMenu' : ''} >
+          <Link to='/credit'><img alt="menu-icon" src={MenuIcon6} />  <span>Credit</span> </Link>
         </li>
       </ul>
     </div>
