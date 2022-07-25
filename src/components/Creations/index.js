@@ -28,7 +28,7 @@ const Creations = () => {
 
       {[1, 2, 3].map(i => {
         return (
-          <Grid item xs={12} style={{ marginTop: '10px' }}>
+          <Grid item xs={12} style={{ paddingTop: '10px' }}>
             <CollectionCard interactionBtns={true} />
           </Grid>
         );
@@ -39,7 +39,7 @@ const Creations = () => {
 
         {[1, 2, 3].map(i => {
           return (
-            <Grid item xs={12} style={{ marginTop: '10px' }}>
+            <Grid item xs={12} style={{ paddingTop: '10px' }}>
               <CollectionCard interactionBtns={false} />
             </Grid>
           );
