@@ -1072,7 +1072,10 @@ color: #32363C;
 .otherContributorCard {
   display: flex;
   gap: 20px;
-  padding: 8px 20px;
+  margin: 12px 23px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0px;
+
 }
 
 .otherContributorCard img {

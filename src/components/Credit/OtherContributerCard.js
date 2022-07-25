@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
 import React from 'react';
-import UserImage1 from '../../assets/user-image-3.png'
+import UserImage1 from '../../assets/top-learner-user.png'
 
 export default function OtherContributerCard() {
   return (
