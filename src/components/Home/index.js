@@ -22,7 +22,7 @@ const Home = () => {
       </Grid>
 
       <Grid item xs={3}>
-        <Typography className='inviationHeaderTitle homepageTitle' variant='h6'>Top Learner</Typography>
+        <Typography className='inviationHeaderTitle homepageTitle' variant='h6'>Top Learners</Typography>
         
         {[1, 2, 3, 4, 5].map((card) => (
           <TopLearnerCard  />
