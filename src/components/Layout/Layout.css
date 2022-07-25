@@ -223,6 +223,7 @@ color: #32363C;
   background-size: cover;
   backface-visibility: hidden;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .front__face-photo {
@@ -436,6 +437,7 @@ color: #32363C;
 .invitationCardRight {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .invitationCardRightUser {
@@ -453,6 +455,35 @@ color: #32363C;
   flex-direction: column;
   align-items: flex-end;
   justify-content: end;
+}
+
+.invitationCardRightUser {
+
+}
+
+.postedImage {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.postedImage h6 {
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+} 
+
+.postedImageRight {
+  margin-top: 15px;
+}
+
+.postedImage img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #FFFFFF;
+  filter: drop-shadow(0px 2px 13px rgba(91, 88, 88, 0.23));
+  border-radius: 10px;
 }
 
 .acceptButton {
@@ -1071,6 +1102,19 @@ color: #32363C;
 
 
 /** Creations **/
+.collectionCard {
+  padding: 14px 7px;
+}
+
+.collectionCardLeft {
+  padding: 0px;
+}
+
+.collectionCardLeftImage {
+  width: 135px!important;
+  padding: 0px 10px;
+}
+
 .collectionTitleBox {
   display: flex;
   justify-content: space-between;
@@ -1093,3 +1137,85 @@ color: #32363C;
   border-radius: 13px!important;
   color: #fff!important;
 }
+
+.collectionFollowerImages {
+  padding: 5px 10px;
+  width: 200px;
+}
+
+.collectionFollowerImages img {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border: 1.45649px solid #FFFFFF;
+  filter: drop-shadow(4.36946px 2.91297px 24.7603px rgba(200, 209, 216, 0.35));
+  border-radius: 32px;
+  margin-left: -17px;
+}
+
+.collectionFollowerDateCreated {
+  height: 80px;
+  width: 200px;
+  margin: 10px;
+  border-right: 1.45649px solid #EEF0F3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+  text-align: center;
+}
+
+.socialIcons .socialIcon img {
+  position: relative;
+  top: 5px;
+}
+
+
+.socialIcons .active {
+  width: 70px;
+  color: #F78F8A;
+  font-weight: 600;
+}
+
+.socialIcons .socialIcon img {
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+
+.collectionRightButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  height: 100px;
+}
+
+.collectionRightButton img {
+  width: 25px;
+  height: 25px;
+  background: #F5F9FD;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.learnHowToImage {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.learnHowToImage img {
+  width: 100%;
+  }

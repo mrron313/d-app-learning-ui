@@ -1,10 +1,18 @@
 import { Button, Grid, TextField, Typography } from '@mui/material';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import CollectionCard from './CollectionCard';
+import LearnHowToImage from '../../assets/learnhowto.png';
 
 const Creations = () => {
+  const navigate = useNavigate();
+
+  const add = () => {
+    navigate('/scenario-1/create-collection');
+  }
+
   return ( 
-    <Grid container>
+    <Grid container spacing={2}>
       <Grid item xs={12} className='collectionTitleBox'>
         <Typography className='inviationHeaderTitle' variant='h6'>My Collection</Typography>
         <div className='collectionTitleBox'>
@@ -14,7 +22,7 @@ const Creations = () => {
               style: { padding: '8px 17px', color: '#32363C' },
             }}
             className='searchBarCollection' fullWidth placeholder="Search" id="fullWidth" />
-          <Button className='collectionAddNew'>+ Add New</Button>
+          <Button onClick={add} className='collectionAddNew'>+ Add New</Button>
         </div>
       </Grid>
 
@@ -36,6 +44,14 @@ const Creations = () => {
             </Grid>
           );
         })}
+      </Grid>
+
+      <Grid item xs={3}>
+        <Typography className='inviationHeaderTitle invitationSentSection' variant='h6'>Learn How To</Typography>
+
+        <div className='learnHowToImage'>
+          <img src={LearnHowToImage} />
+        </div>
       </Grid>
     </Grid>
   );

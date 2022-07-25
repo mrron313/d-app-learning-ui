@@ -1,5 +1,6 @@
 import { Chip, Grid, Typography } from "@mui/material";
 import InvitationCardImg from '../../assets/invitation-card.png';
+import UserImage1 from '../../assets/user-image-2.jpeg';
 
 function InvitationCard() {
   return (
@@ -26,12 +27,20 @@ function InvitationCard() {
       <Grid item xs={5.5}>
         <div className="invitationCardRight">
           <div className="invitationCardRightUser">
-            <Typography variant='h6'>
-              Pompeii
-            </Typography>
-            <Typography variant='span'>
-              Posted By jack 58
-            </Typography>
+            <div className="postedImage">
+              <img src={UserImage1} />
+
+              <Typography variant='h6'>
+                Posted By jack 58
+              </Typography>
+            </div>
+
+            <div className="postedImageRight">
+              <Typography variant='span'>
+                New poem for jack at 2022-01-01  00:00:00 
+              </Typography>
+            </div>
+
           </div>
           <div className="invitationCardRightButton">
             <Chip label='Accept' className='acceptButton' />
