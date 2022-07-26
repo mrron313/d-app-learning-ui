@@ -20,9 +20,9 @@ function HomeHeader() {
         <TextField variant="standard"
           InputProps={{
             disableUnderline: true,
-            style: { padding: '10px' },
+            style: { padding: '6px 17px', color: '#32363C' },
           }}
-          className='searchBar' fullWidth label="Search for online course" id="fullWidth" />
+          className='searchBar' fullWidth placeholder="Search for online course" id="fullWidth" />
       </Grid>
 
       <Grid item xs={4}>

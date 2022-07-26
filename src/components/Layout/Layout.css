@@ -325,52 +325,6 @@ color: #32363C;
 
 
 
-
-
-/* Tranding News */
-
-.trandingNewsHeader h5 {
-  font-size: 28px!important;
-  color: #272727!important;
-  padding-bottom: 10px!important;
-  margin-top: 30px!important;
-  font-weight: 700!important;
-}
-
-.trandingNewsCard {
-  display: flex;
-  gap: 20px;
-  background-color: #FFFFFF;
-  background: #FFFFFF;
-  border: 1px solid #EBEFF0;
-  border-radius: 25px;
-  padding: 20px!important;
-}
-
-.trandingNewsCardText {
-  margin-top: 20px;
-}
-
-.trandingNewsCardTextTitle h6 {
-  font-size: 25px;
-  line-height: 29px;
-  color: #272727;
-  font-weight: 700;
-}
-
-.trandingNewsCardTextParagraph {
-  font-size: 16px;
-  line-height: 22.4px;
-  color: #32363C;
-}
-
-.trandingNewsCardTextTime span {
-  color: #F78F8A;
-}
-
-
-
-
 /* Inivation */
 .inviationHeaderTitle {
   font-size: 28px!important;
@@ -493,6 +447,7 @@ color: #32363C;
   background: #6FD14C!important;
   border-radius: 12px!important;
   color: #fff!important;
+  font-size: 14px;
 }
 
 .declineButton {
@@ -503,6 +458,7 @@ color: #32363C;
   border-radius: 12px!important;
   color: #fff!important;
   margin-top: 7px;
+  font-size: 14px;
 }
 
 
@@ -601,7 +557,7 @@ color: #32363C;
 /* Footer */
 .footerSection {
   border-top: 1px solid #d5d1d1;
-  padding: 10px 280px;
+  padding: 10px 130px;
   margin-top: 70px;
 }
 .footerText {
@@ -1222,3 +1178,59 @@ color: #32363C;
 .learnHowToImage img {
   width: 100%;
   }
+
+
+
+
+/* Tranding News */
+
+.trandingNewsHeader h5 {
+  font-size: 28px!important;
+  color: #272727!important;
+  padding-bottom: 10px!important;
+  margin-top: 30px!important;
+  font-weight: 700!important;
+}
+
+.trandingNewsCard {
+  display: flex;
+  gap: 20px;
+  background-color: #FFFFFF;
+  background: #FFFFFF;
+  border: 1px solid #EBEFF0;
+  border-radius: 25px;
+  padding: 20px!important;
+}
+
+.trandingNewsCardText {
+  margin-top: 20px;
+}
+
+.trandingNewsCardTextTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trandingNewsCardTextTitle h6 {
+  font-size: 25px;
+  line-height: 29px;
+  color: #272727;
+  font-weight: 700;
+}
+
+.trandingNewsCardTextParagraph {
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #32363C;
+}
+
+.trandingNewsCardTextTime span {
+  color: #F78F8A;
+}
+
+.trendingNewsRightButton {
+  justify-content: end;
+  align-items: start;
+  width: 50%;
+  height: 50px;
+}

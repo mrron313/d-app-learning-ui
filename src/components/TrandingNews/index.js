@@ -1,5 +1,8 @@
 import { Grid, Typography } from "@mui/material";
 import TrandingNewsImage from "../../assets/TrandingNewsImage.png";
+import PencilIcon from '../../assets/pencil.png';
+import DownloadIcon from '../../assets/download.png';
+import ShareIcon from '../../assets/share.png';
 
 function TrandingNews() {
   return (
@@ -18,6 +21,13 @@ function TrandingNews() {
             <div className="trandingNewsCardTextHeader">
               <div className="trandingNewsCardTextTitle">
                 <Typography variant="h6">The biggest misconceptions about bitcoin</Typography>
+
+
+                <div className="invitationCardRightButton collectionRightButton trendingNewsRightButton">
+                  <img src={PencilIcon} />
+                  <img src={DownloadIcon} />
+                  <img src={ShareIcon} />
+                </div>
               </div>
 
               <Typography className="trandingNewsCardTextTime"><span>Yahoo Finance </span>- 10 Hours ago</Typography>
