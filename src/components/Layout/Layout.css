@@ -223,7 +223,7 @@ color: #32363C;
   background-size: cover;
   backface-visibility: hidden;
   overflow: hidden;
-  border-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .front__face-photo {
