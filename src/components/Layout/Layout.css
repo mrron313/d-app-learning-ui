@@ -566,6 +566,10 @@ color: #32363C;
   color: #32363C;
 }
 
+.footerSection .socialIcons {
+  text-align: right
+}
+
 
 
 /* Slider */
@@ -1232,5 +1236,5 @@ color: #32363C;
   justify-content: end;
   align-items: start;
   width: 50%;
-  height: 50px;
+  height: 35px;
 }
