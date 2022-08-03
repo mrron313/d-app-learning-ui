@@ -1433,4 +1433,42 @@ color: #32363C;
     border-top-left-radius: 20px!important;
     border-top-right-radius: 20px;
   }
+
+
+  .front__face-photo {
+    height: 71px;
+    width: 72px;
+  }
+
+  .userDetailsChip .chip {
+    min-width: 140px!important;
+    font-size: 14px!important;
+  }
+
+  .inner-div {
+    height: 700px;
+  }
+
+  .userDetails {
+    top: -244px;
+    display: flex;
+    background: #fff;
+    gap: 0px;
+    padding: 20px;
+    margin-bottom: 100px;
+    height: 460px;
+  }
+
+  .collectionButton {
+    width: 90%;
+    height: 195px;
+    margin-left: 0px !important;
+  }
+  
+  .collectionButton2{
+    width: 90%;
+    height: 195px;
+    margin-left: 0px !important;
+    margin-top: 20px!important;
+  }
 }

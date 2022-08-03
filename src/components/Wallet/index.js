@@ -27,7 +27,7 @@ const Wallet = () => {
               </div>
             </Grid>
             <Grid container className='userDetails'>
-              <Grid item xs={12} spacing={5} className='userDetailsRight'>
+              <Grid item md={12} spacing={5} className='userDetailsRight'>
                 <Button className='collectionButton'>
                   View My Collections
                 </Button>
