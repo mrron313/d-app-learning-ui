@@ -1296,7 +1296,7 @@ color: #32363C;
   }
 
   .collectionCard {
-    width: 80% !important;
+    width: 76% !important;
     height: 570px;
     justify-content: flex-start;
     padding: 15px;
@@ -1355,6 +1355,7 @@ color: #32363C;
   .trandingNewsCardTextParagraph {
     text-align: justify;
     line-height: 22px;
+    margin-bottom: 20px;
   }
 
   .footerSection {
