@@ -8,10 +8,10 @@ import LinkedinIcon from '../../assets/linkedin2.png';
 function Footer() {
   return ( 
     <Grid container className="footerSection">
-      <Grid item xs={6}>
+      <Grid item md={6} xs={12} sm={12}>
         <p className="footerText">Copyright © 2022. Decentralized e-learning. All Rights Reserved</p>
       </Grid>
-      <Grid item xs={6} className="socialIcons" justifyContent='flex-end'>
+      <Grid item md={6} xs={12} sm={12} className="socialIcons">
         <div className='creditCardIcons'>
           <img src={FacebookIcon} />
           <img src={TwitterIcon} />

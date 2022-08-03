@@ -23,7 +23,7 @@ function TrandingNews() {
                 <Typography variant="h6">The biggest misconceptions about bitcoin</Typography>
 
 
-                <div className="invitationCardRightButton collectionRightButton trendingNewsRightButton">
+                <div className="invitationCardRightButton collectionRightButton trendingNewsRightButton responsive">
                   <img src={PencilIcon} />
                   <img src={DownloadIcon} />
                   <img src={ShareIcon} />
@@ -37,6 +37,11 @@ function TrandingNews() {
               <p>
                 Deliver real-time metrics for actionalble results. Amet minim mollit non deserunt ullamco est sit aliqu dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostru amet mollit non deserunt ullamco est sit. Read More
               </p>
+            </div>
+            <div className="invitationCardRightButton collectionRightButton trendingNewsRightButton non-responsive">
+              <img src={PencilIcon} />
+              <img src={DownloadIcon} />
+              <img src={ShareIcon} />
             </div>
           </div>
         </div>
