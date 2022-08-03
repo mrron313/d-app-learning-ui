@@ -1,14 +1,13 @@
 import { Button, Grid, Typography } from "@mui/material";
 import CourseCard1 from '../../assets/course-card1.png';
-import CourseCard2 from '../../assets/course-card2.png';
 
 function CourseCard(props) {
 
   return (
     <Grid container className="invitationCard courseCard">
       <Grid item xs={12}>
-        <div className="invitationCardLeft">
-          <div className="invitationCardLeftImage">
+        <div className="invitationCardLeft courseCardLeft">
+          <div className="invitationCardLeftImage courseCardLeftImage">
             <img alt='course-card' width='180' src={CourseCard1} />
           </div>
           <div className="invitationCardLeftText courseCardLeftText">

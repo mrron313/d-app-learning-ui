@@ -6,7 +6,7 @@ function TopLearnerCard(props) {
   return (
     <Grid container className="invitationCard topLearnerCard">
       <Grid item xs={12}>
-        <div className="invitationCardLeft">
+        <div className="invitationCardLeft topLearnerCardLeft">
           <div className="invitationCardLeftImage topLearnerCardLeftImage">
             <img alt='course-card' width='50' src={TopLearnerImg1} />
           </div>

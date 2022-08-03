@@ -1471,4 +1471,24 @@ color: #32363C;
     margin-left: 0px !important;
     margin-top: 20px!important;
   }
+
+  .latestNewsCardLeft {
+    display: flex;
+    gap: 7px;
+  }
+
+  .topLearnerCardLeft {
+    display: flex;
+    gap: 10px;
+  }
+
+  .courseCardLeft {
+    display: flex;
+    gap: 10px;
+  }
+
+  .courseCardLeftImage img {
+    width: 120px;
+    height: 100%;
+  }
 }

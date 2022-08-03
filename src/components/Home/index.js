@@ -13,7 +13,7 @@ const Home = () => {
         <Slider />
       </Grid>
 
-      <Grid item xs={5}>
+      <Grid item md={5} xs={12} sm={12}>
         <Typography className='inviationHeaderTitle homepageTitle' variant='h6'>Trending Collections</Typography>
       
         {[1, 2, 3].map((card) => (
@@ -21,7 +21,7 @@ const Home = () => {
         ))}
       </Grid>
 
-      <Grid item xs={3}>
+      <Grid item md={3} xs={12} sm={12}>
         <Typography className='inviationHeaderTitle homepageTitle' variant='h6'>Top Learners</Typography>
         
         {[1, 2, 3, 4, 5].map((card) => (
@@ -29,7 +29,7 @@ const Home = () => {
         ))}
       </Grid>
 
-      <Grid item xs={4}>
+      <Grid item md={4} xs={12} sm={12}>
         <Typography className='inviationHeaderTitle homepageTitle' variant='h6'>Latest News</Typography>
           
           {[1, 2, 3, 4, 5].map((card) => (
