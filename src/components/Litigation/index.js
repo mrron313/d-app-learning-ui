@@ -27,16 +27,16 @@ const Litigation = () => {
       <table className='litigationBox'>
         <tr className='litigationBoxHeader'>
             <th>Creation Title</th>
-            <th>Claimer</th>
-            <th>Assumed Author</th>
-            <th>Litigation Start</th>
-            <th>Deadline</th>
-            <th>Availabel jurors</th>
+            <th className='responsive'>Claimer</th>
+            <th className='responsive'>Assumed Author</th>
+            <th className='responsive'>Litigation Start</th>
+            <th className='responsive'>Deadline</th>
+            <th className='responsive'>Availabel jurors</th>
         </tr>
 
         <tr className='litigationBoxBody'>
             <td>I want reclaim my authorship of this media</td>
-            <td>
+            <td className='responsive'>
                 <div className='litigationUser'>
                     <div className='litigationUserImage'>
                         <img src={UserImage} alt='user-image' />
@@ -47,7 +47,7 @@ const Litigation = () => {
                     </div>
                 </div>
             </td>
-            <td>
+            <td className='responsive'>
                 <div className='litigationUser'>
                     <div className='litigationUserImage'>
                         <img src={UserImage2} alt='user-image' />
@@ -58,14 +58,14 @@ const Litigation = () => {
                     </div>
                 </div>
             </td>
-            <td>01/05/2022</td>
-            <td>01/07/2022</td>
-            <td>9/10</td>
+            <td className='responsive'>01/05/2022</td>
+            <td className='responsive'>01/07/2022</td>
+            <td className='responsive'>9/10</td>
         </tr>
 
         <tr className='litigationBoxBody'>
             <td>I want reclaim my authorship of this media</td>
-            <td>
+            <td className='responsive'>
                 <div className='litigationUser'>
                     <div className='litigationUserImage'>
                         <img src={UserImage} alt='user-image' />
@@ -76,7 +76,7 @@ const Litigation = () => {
                     </div>
                 </div>
             </td>
-            <td>
+            <td className='responsive'>
                 <div className='litigationUser'>
                     <div className='litigationUserImage'>
                         <img src={UserImage2} alt='user-image' />
@@ -87,9 +87,9 @@ const Litigation = () => {
                     </div>
                 </div>
             </td>
-            <td>01/05/2022</td>
-            <td>01/07/2022</td>
-            <td>9/10</td>
+            <td className='responsive'>01/05/2022</td>
+            <td className='responsive'>01/07/2022</td>
+            <td className='responsive'>9/10</td>
         </tr>
       </table>
 
@@ -101,16 +101,16 @@ const Litigation = () => {
       <table className='litigationBox'>
         <tr className='litigationBoxHeader'>
             <th>Creation Title</th>
-            <th>Claimer</th>
-            <th>Assumed Author</th>
-            <th>Litigation Start</th>
-            <th>Deadline</th>
-            <th>Availabel jurors</th>
+            <th className='responsive'>Claimer</th>
+            <th className='responsive'>Assumed Author</th>
+            <th className='responsive'>Litigation Start</th>
+            <th className='responsive'>Deadline</th>
+            <th className='responsive'>Availabel jurors</th>
         </tr>
 
         <tr className='litigationBoxBody'>
             <td>I want reclaim my authorship of this media</td>
-            <td>
+            <td className='responsive'>
                 <div className='litigationUser'>
                     <div className='litigationUserImage'>
                         <img src={UserImage} alt='user-image' />
@@ -121,7 +121,7 @@ const Litigation = () => {
                     </div>
                 </div>
             </td>
-            <td>
+            <td className='responsive'>
                 <div className='litigationUser'>
                     <div className='litigationUserImage'>
                         <img src={UserImage2} alt='user-image' />
@@ -132,9 +132,9 @@ const Litigation = () => {
                     </div>
                 </div>
             </td>
-            <td>01/05/2022</td>
-            <td>01/07/2022</td>
-            <td>
+            <td className='responsive'>01/05/2022</td>
+            <td className='responsive'>01/07/2022</td>
+            <td className='responsive'>
                 <Button className='withdrawButton'>
                     <img src={WithdrawIcon} alt='withdraw' />    Withdraw
                 </Button>
@@ -143,7 +143,7 @@ const Litigation = () => {
 
         <tr className='litigationBoxBody'>
             <td>I want reclaim my authorship of this media</td>
-            <td>
+            <td className='responsive'>
                 <div className='litigationUser'>
                     <div className='litigationUserImage'>
                         <img src={UserImage} alt='user-image' />
@@ -154,7 +154,7 @@ const Litigation = () => {
                     </div>
                 </div>
             </td>
-            <td>
+            <td className='responsive'>
                 <div className='litigationUser'>
                     <div className='litigationUserImage'>
                         <img src={UserImage2} alt='user-image' />
@@ -165,9 +165,9 @@ const Litigation = () => {
                     </div>
                 </div>
             </td>
-            <td>01/05/2022</td>
-            <td>01/07/2022</td>
-            <td>
+            <td className='responsive'>01/05/2022</td>
+            <td className='responsive'>01/07/2022</td>
+            <td className='responsive'>
                 <Button onClick={approve} className='approveButton'>
                     <img src={ApproveIcon} alt='withdraw' />    Approve
                 </Button>
@@ -181,17 +181,17 @@ const Litigation = () => {
 
       <table className='litigationBox'>
         <tr className='litigationBoxHeader'>
-            <th>Creation Title</th>
-            <th>Claimer</th>
-            <th>Assumed Author</th>
-            <th>Litigation Start</th>
-            <th>Deadline</th>
-            <th>Availabel jurors</th>
+            <th >Creation Title</th>
+            <th className='responsive'>Claimer</th>
+            <th className='responsive'>Assumed Author</th>
+            <th className='responsive'>Litigation Start</th>
+            <th className='responsive'>Deadline</th>
+            <th className='responsive'>Availabel jurors</th>
         </tr>
 
         <tr className='litigationBoxBody'>
             <td>I want reclaim my authorship of this media</td>
-            <td>
+            <td className='responsive'>
                 <div className='litigationUser'>
                     <div className='litigationUserImage'>
                         <img src={UserImage} alt='user-image' />
@@ -202,7 +202,7 @@ const Litigation = () => {
                     </div>
                 </div>
             </td>
-            <td>
+            <td className='responsive'>
                 <div className='litigationUser'>
                     <div className='litigationUserImage'>
                         <img src={UserImage2} alt='user-image' />
@@ -213,14 +213,14 @@ const Litigation = () => {
                     </div>
                 </div>
             </td>
-            <td>01/05/2022</td>
-            <td>01/07/2022</td>
-            <td>9/10</td>
+            <td className='responsive'>01/05/2022</td>
+            <td className='responsive'>01/07/2022</td>
+            <td className='responsive'>9/10</td>
         </tr>
 
         <tr className='litigationBoxBody'>
             <td>I want reclaim my authorship of this media</td>
-            <td>
+            <td className='responsive'>
                 <div className='litigationUser'>
                     <div className='litigationUserImage'>
                         <img src={UserImage} alt='user-image' />
@@ -231,7 +231,7 @@ const Litigation = () => {
                     </div>
                 </div>
             </td>
-            <td>
+            <td className='responsive'>
                 <div className='litigationUser'>
                     <div className='litigationUserImage'>
                         <img src={UserImage2} alt='user-image' />
@@ -242,9 +242,9 @@ const Litigation = () => {
                     </div>
                 </div>
             </td>
-            <td>01/05/2022</td>
-            <td>01/07/2022</td>
-            <td>9/10</td>
+            <td className='responsive'>01/05/2022</td>
+            <td className='responsive'>01/07/2022</td>
+            <td className='responsive'>9/10</td>
         </tr>
       </table>
 

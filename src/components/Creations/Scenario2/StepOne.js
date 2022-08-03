@@ -6,10 +6,10 @@ export default function StepOne() {
  return (
     <Grid item xs={12}>
         <Grid container className='createCollectionBox createCollectionBoxScenario2'>
-            <Grid xs={2}>
+            <Grid md={2} xs={12}>
                 <Typography className='collectionFieldTitle'>Title</Typography>
             </Grid>
-            <Grid xs={10}>
+            <Grid md={10} xs={12}>
                 <TextField
                     variant="standard"           
                     InputProps={{
@@ -18,10 +18,10 @@ export default function StepOne() {
                     }} className='collectionField' fullWidth placeholder="Collection title" />
             </Grid>
 
-            <Grid xs={2}>
+            <Grid md={2} xs={12}>
                 <Typography className='collectionFieldTitle'>Description</Typography>
             </Grid>
-            <Grid xs={10}>
+            <Grid md={10} xs={12}>
                 <TextField
                     variant="standard"           
                     InputProps={{
@@ -30,10 +30,10 @@ export default function StepOne() {
                     }} className='collectionField collectionDesc' fullWidth placeholder="Select Collection" />
             </Grid>
 
-            <Grid xs={2}>
+            <Grid md={2} xs={12}>
                 <Typography className='collectionFieldTitle'>Collection</Typography>
             </Grid>
-            <Grid xs={10}>
+            <Grid md={10} xs={12}>
                 <TextField
                     variant="standard"           
                     InputProps={{
@@ -42,10 +42,10 @@ export default function StepOne() {
                     }} className='collectionField' fullWidth placeholder="Select Collection" />
             </Grid>
 
-            <Grid xs={2}>
+            <Grid md={2} xs={12}>
                 <Typography className='collectionFieldTitle'>Author</Typography>
             </Grid>
-            <Grid xs={10}>
+            <Grid md={10} xs={12}>
                 <div className='collectionField authorField'>
                     <UserCard />
                 </div>

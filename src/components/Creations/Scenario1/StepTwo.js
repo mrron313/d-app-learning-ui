@@ -6,10 +6,10 @@ export default function StepTwo() {
  return (
     <Grid item xs={12}>
         <Grid container className='createCollectionBox collectionBoxStep2'>
-            <Grid xs={2}>
+            <Grid md={2} xs={12}>
                 <Typography className='collectionFieldTitle'>Title</Typography>
             </Grid>
-            <Grid xs={4}>
+            <Grid xs={12} md={4}>
                 <TextField
                     variant="standard"           
                     InputProps={{
@@ -18,10 +18,10 @@ export default function StepTwo() {
                     }} className='collectionField' fullWidth placeholder="Collection title" />
             </Grid>
 
-            <Grid xs={2}>
+            <Grid md={2} xs={12}>
                 <Typography className='collectionFieldTitle leftCollectionTitle'>Source</Typography>
             </Grid>
-            <Grid xs={4}>
+            <Grid xs={12} md={4}>
                 <TextField
                     variant="standard"           
                     InputProps={{
@@ -30,10 +30,10 @@ export default function StepTwo() {
                     }} className='collectionField' fullWidth placeholder="Select.." />
             </Grid>
 
-            <Grid xs={2}>
-                <Typography className='collectionFieldTitle'>Source</Typography>
+            <Grid md={2} xs={12}>
+                <Typography className='collectionFieldTitle'>Link</Typography>
             </Grid>
-            <Grid xs={10}>
+            <Grid md={10} xs={12}>
                 <TextField
                     variant="standard"           
                     InputProps={{
@@ -42,7 +42,7 @@ export default function StepTwo() {
                     }} className='collectionField' fullWidth placeholder="Collection source (Google drive, Youtube, etc)" />
             </Grid>
 
-            <Grid xs={2}>
+            <Grid md={2} xs={12}>
                 <Typography className='collectionFieldTitle'>Author</Typography>
             </Grid>
             <Grid xs={6}>

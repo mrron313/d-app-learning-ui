@@ -8,22 +8,22 @@ import GreenRightIcon from '../../../assets/green-right.png';
 export default function StepThree() {
  return (
     <Grid item xs={12}>
-        <Grid container className='createCollectionBox'>
+        <Grid container className='createCollectionBox responsiveCreateCollectionBox'>
 
-            <Grid container item xs={7}>
-                <Grid xs={3}>
+            <Grid container item md={7} xs={12}>
+                <Grid md={3} xs={12}>
                     <Typography className='collectionFieldTitle'>Collection Data</Typography>
                 </Grid>
-                <Grid xs={9}>
+                <Grid md={9} xs={12}>
                     <Button className='transparentGreenButton'>
                         <img src={GreenRightIcon} alt='green-right' /> Filled
                     </Button>
                 </Grid>
 
-                <Grid xs={3} className='collectionStoreBoxFields'>
+                <Grid md={3} xs={12} className='collectionStoreBoxFields'>
                     <Typography className='collectionFieldTitle'>Self Sign</Typography>
                 </Grid>
-                <Grid xs={9} className='collectionStoreBoxFields'>
+                <Grid md={9} xs={12} className='collectionStoreBoxFields'>
                     <Button className='nextCollectionButton signInCollectionButton'>
                         Signin
                     </Button>
@@ -32,10 +32,10 @@ export default function StepThree() {
                     </Button>
                 </Grid>
 
-                <Grid xs={3} className='collectionStoreBoxFields'>
+                <Grid md={3} xs={12} className='collectionStoreBoxFields'>
                     <Typography className='collectionFieldTitle'>Store</Typography>
                 </Grid>
-                <Grid xs={9} >
+                <Grid md={9} xs={12} >
                     <TextField
                         variant="standard"           
                         InputProps={{
@@ -57,7 +57,7 @@ export default function StepThree() {
                 </Grid>
             </Grid>
 
-            <Grid item xs={4} className='qrSectionDiv'>
+            <Grid item md={12} xs={12} className='qrSectionDiv'>
                 <Typography variant='h6' className='qrCodeTitle'>Current QR Code</Typography>
                 <div className='qrSection'>
                     <img alt='qr' src={QrCode} />

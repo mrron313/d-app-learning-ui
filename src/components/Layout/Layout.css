@@ -670,10 +670,10 @@ color: #32363C;
 }
 
 .qrSectionDiv {
-  margin-left: 40px!important;
+  margin-left: 50px!important;
   justify-content: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: column!important;
   align-items: center;
 }
 
@@ -869,7 +869,7 @@ color: #32363C;
   border: none !important;
 }
 
-.litigationBoxHeader th:first-child {
+.litigationBoxHeader tr:first-child {
   border-top-left-radius: 20px!important;
 }
 
@@ -1348,6 +1348,13 @@ color: #32363C;
     margin-bottom: 10px;
   }
 
+  .trendingNewsRightButton {
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 35px;
+  }
+
   .invitationCardRightButton {
     margin-bottom: 20px;
   }
@@ -1356,6 +1363,56 @@ color: #32363C;
     text-align: justify;
     line-height: 22px;
     margin-bottom: 20px;
+  }
+  
+  .createCollectionBox {
+    padding: 10px;
+    height: 550px;
+  }
+  
+  .responsiveCreateCollectionBox {
+    height: 940px;
+  }
+
+  .leftCollectionTitle {
+    margin-left: 0px!important;
+  }
+
+  .createCollectionBoxScenario2 {
+    height: 700px;
+  }
+
+  .userCard {
+    width: 83%;
+    position: relative;
+  }
+
+  .userCardImage img {
+    width: 35px;
+    border-radius: 10px;
+  }
+  
+  .userCardDetails {
+    margin-left: 10px;
+  }
+
+  .userCardDetails h6 {
+    font-size: 15px;
+  }
+
+  .userCardChips {
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+  }
+
+  .userCardChips .chip {
+    width: 120px;
+    height: 35px;
+  }
+
+  .userCardChips .chip span {
+    font-size: 14px!important;
   }
 
   .footerSection {
@@ -1366,5 +1423,14 @@ color: #32363C;
 
   .footerSection .socialIcons {
     justify-content: center;
+  }
+
+  .qrSectionDiv {
+    margin-left: 0px!important;
+  }
+
+  .litigationBoxHeader th:first-child {
+    border-top-left-radius: 20px!important;
+    border-top-right-radius: 20px;
   }
 }
