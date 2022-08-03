@@ -10,11 +10,11 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <Grid container className='header'>
-      <Grid item xs={2} className='logoContainer'>
+      <Grid item xs={2} className='logoContainer responsive'>
         <Link to="/"><img alt='logo' src={logo} /></Link>
       </Grid>
 
-      <Grid item xs={7} >
+      <Grid item xs={7} className='responsive'>
         <TextField variant="standard"
           InputProps={{
             disableUnderline: true,

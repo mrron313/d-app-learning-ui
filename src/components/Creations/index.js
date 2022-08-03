@@ -13,6 +13,7 @@ const Creations = () => {
 
   return ( 
     <Grid container spacing={2}>
+      
       <Grid item xs={12} className='collectionTitleBox'>
         <Typography className='inviationHeaderTitle' variant='h6'>My Collection</Typography>
         <div className='collectionTitleBox'>
@@ -34,7 +35,7 @@ const Creations = () => {
         );
       })}
 
-      <Grid item xs={9}>
+      <Grid item xs={12} sm={12} md={9}>
         <Typography className='inviationHeaderTitle invitationSentSection' variant='h6'>Trending Collections</Typography>
 
         {[1, 2, 3].map(i => {
@@ -46,7 +47,7 @@ const Creations = () => {
         })}
       </Grid>
 
-      <Grid item xs={3}>
+      <Grid item md={3} xs={12} sm={12}>
         <Typography className='inviationHeaderTitle invitationSentSection' variant='h6'>Learn How To</Typography>
 
         <div className='learnHowToImage'>

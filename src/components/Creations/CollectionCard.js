@@ -16,7 +16,8 @@ function CollectionCard(props) {
 
   return (
     <Grid container className="invitationCard collectionCard">
-      <Grid item xs={interactionBtns? 9 : 12}>
+
+      <Grid item md={interactionBtns? 4 : 5} sm={12}>
         <div className="invitationCardLeft collectionCardLeft">
           <div className="invitationCardLeftImage collectionCardLeftImage">
             <img alt='collection-card' width='130' src={CreationCardImg} />
@@ -30,6 +31,11 @@ function CollectionCard(props) {
               remix, and reuse
             </Typography>
           </div>
+        </div>
+      </Grid>
+
+      <Grid item md={interactionBtns? 3 : 4} sm={12}>
+        <div className="invitationCardLeft collectionCardLeft">
           <div className="invitationCardLeftButton collectionFollowerImages">
             <div className="collectionFollowerImages">
               <img src={UserImage1} />
@@ -51,7 +57,11 @@ function CollectionCard(props) {
               </div>
             </div>
           </div>
+        </div>
+      </Grid>
 
+      <Grid item md={interactionBtns? 2 : 3} sm={12}>
+        <div className="invitationCardLeft collectionCardLeft">
           <div className="invitationCardRightUser collectionFollowerDateCreated">
             <Typography variant='h6'>
               Date Created
@@ -62,7 +72,8 @@ function CollectionCard(props) {
           </div>
         </div>
       </Grid>
-      <Grid item xs={interactionBtns? 3 : 0}>
+
+      <Grid item md={interactionBtns? 3 : 0} sm={12}>
         <div className="invitationCardRight">
           {interactionBtns && (
             <div className="invitationCardRightButton collectionRightButton">

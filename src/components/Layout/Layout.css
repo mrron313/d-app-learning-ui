@@ -144,7 +144,7 @@ color: #32363C;
   min-height: 300px;
   border-radius: 25px;
   width: 85%;
-  margin-top: 55px;
+  margin-top: 47px;
 }
 
 .sidebar ul {
@@ -193,7 +193,7 @@ color: #32363C;
 .inner-div {
   height: 600px;
   position: relative;
-  margin-top: 55px;
+  margin-top: 47px;
 }
 
 .inner-div {
@@ -359,9 +359,10 @@ color: #32363C;
 }
 
 .invitationCardLeftText h6 {
-  font-size: 17px;
+  font-size: 18px;
   color: #272727;
   margin-bottom: 5px;
+  font-weight: 700;
 }
 
 .invitationCardLeftText span {
@@ -1237,4 +1238,89 @@ color: #32363C;
   align-items: start;
   width: 50%;
   height: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**** MEDIA QUERY ****/
+@media only screen and (max-width: 375px) {
+  .sidebarResponsive, .responsive {
+    display: none;
+  }
+
+  .header {
+    height: 95px;
+    margin-bottom: 10px;
+  }
+
+  .header ul {
+    justify-content: unset;
+    overflow: initial;
+    margin-top: 20px!important;
+  }
+
+  .layout {
+    padding: 10px;
+    min-height: 1020px;
+  }
+
+  .collectionTitleBox {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .searchBarCollection {
+    width: 63%!important;
+  }
+
+  .collectionCard {
+    width: 80% !important;
+    height: 570px;
+    justify-content: flex-start;
+    padding: 15px;
+  }
+
+  .invitationCardLeft {
+    display: block;
+    gap: 0px;
+  }
+
+  .collectionCardLeftText {
+    border: none!important;
+  }
+
+  .collectionCardLeftImage {
+    padding: 0px;
+  }
+
+  .collectionCardLeftImage img {
+    width: 250px;
+  }
+
+  .collectionFollowerDateCreated {
+    width: 200px;
+    margin: 10px;
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: unset!important;
+    align-items: unset!important;
+    padding: 0px!important;
+    height: 30px;
+  }
+
+  .collectionAddNew {
+    width: 105px!important;
+  }
+
 }

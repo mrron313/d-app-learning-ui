@@ -13,10 +13,10 @@ function MainLayout({ children }) {
       <Grid className='layout'>
         <Header />
         <Grid container spacing={4}>
-          <Grid item xs={2.5}>
+          <Grid item md={2.5} className='sidebarResponsive'>
             <SideBar /> 
           </Grid>
-          <Grid item xs={9.5}>
+          <Grid item md={9.5} xs={12} sm={12}>
             <Grid container>
               <Grid item xs={12}>
                 {children}
