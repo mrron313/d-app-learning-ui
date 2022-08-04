@@ -1002,8 +1002,17 @@ color: #32363C;
   padding-top: 20px;
 }
 
+.creditCard {
+  gap: 10px;
+}
+
 .creditCardDetials {
-  padding: 20px 0px;
+  padding: 7px;
+}
+
+.creditCardImage img {
+  height: 70%;
+  border-radius: 30px;
 }
 
 .creditCardDetials h5 {
@@ -1271,7 +1280,7 @@ color: #32363C;
 
   .header {
     height: 95px;
-    margin-bottom: 10px;
+    margin-bottom: 70px;
   }
 
   .header ul {
@@ -1313,10 +1322,11 @@ color: #32363C;
 
   .collectionCardLeftImage {
     padding: 0px;
+    width: 100%!important;
   }
 
   .collectionCardLeftImage img {
-    width: 182%;
+    width: 100%!important;
   }
 
   .collectionFollowerDateCreated {
@@ -1491,4 +1501,102 @@ color: #32363C;
     width: 120px;
     height: 100%;
   }
+
+  .carousel {
+    height: 450px;
+    perspective: 480px;
+    transform-style: preserve-3d;
+    transform-origin: 0% 50%;
+    top: 60%;
+    left: 0px;
+  }
+
+  .carousel .carousel-item > img {
+    width: 322px;
+    height: 322px;
+  }
+
+  .carousel .carousel-item {
+    visibility: hidden;
+    width: 505px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 116px;
+    opacity: 1!important;
+  }
+
+
+  header {
+    padding: 0 20px;
+    z-index: 99999999;
+  }
+
+  header .logoContainer img {
+    margin: 34px 0px 0px 108px!important;
+  }
+
+  header nav {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #fff;
+    top: 0px;
+    left: -100px;
+    transition: 0.5s;
+  }
+
+  header nav.active {
+    left: 0;
+  }
+
+  header nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 95%;
+  }
+
+  header ul li {
+    margin: 20px 0px;
+    padding: 10px 110px;
+  }
+  
+  .activeSidebarMenu {
+    background: linear-gradient(104.08deg, #FECE76 -28.92%, #F78B88 76.85%);
+    border-radius: 100px;
+    box-shadow: 0px 13px 39px rgba(247, 143, 138, 0.47);
+  }
+
+  .activeSidebarMenu a {
+    color: #fff!important;
+  }
+
+  header ul li a {
+    text-decoration: none;
+    color: #32363C;
+  }
+  
+  header ul li a img {  
+    top: 4px;
+    position: relative;
+    margin-right: 15px;
+    margin-left: 10px;
+  }
+  
+  header ul li a span {
+    top: -3px;
+    position: relative;
+  }
+
+  .non-responsive .searchBar {
+      margin-top: 24px!important;
+      width: 100%;
+      margin-left: 0px !important;
+  }
+
+  .creditCard {
+    max-width: 100%;
+  }
+
 }
