@@ -1010,6 +1010,10 @@ color: #32363C;
   padding: 7px;
 }
 
+.topContributorSection {
+  height: 97%;
+}
+
 .creditCardImage img {
   height: 70%;
   border-radius: 30px;
