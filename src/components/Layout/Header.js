@@ -22,6 +22,17 @@ import MenuIcon3Active from "../../assets/envelope-icon-2.png";
 import MenuIcon4Active from "../../assets/bank-icon-2.png";
 import MenuIcon5Active from "../../assets/wallet-icon-2.png";
 import MenuIcon6Active from "../../assets/credit-icon-2.png";
+import { CSSTransition } from 'react-transition-group';
+
+const duration = 200000;
+
+const Fade = (props) => {
+  return (
+    <CSSTransition classNames="alert" in={props.inProp} timeout={duration} unmountOnExit>
+      {props.children}
+    </CSSTransition>
+  );
+};
 
 function Header() {
   const location = useLocation();
@@ -47,7 +58,25 @@ function Header() {
         <Button onClick={() => setDisplayResponsiveMenu(true)}><MenuIcon /></Button>
       </Grid>
 
-      { displayResponsiveMenu && (
+      <Grid item md={2} xs={6} className='headerMenu'>
+        <ul style={{ display: 'flex', justifyContent: 'flex-end', gap: '18px', alignItems: 'center', marginTop: '45px' }}>
+          <li className='menuBox'><img alt='icon-menu-1' src={icon1} /></li>
+          <li className='menuBox'><img alt='icon-menu-1' src={icon2} /></li>
+          <li style={{ display: 'flex', alignItems: 'center', gap: '5px' }}><img alt='user-img' style={{width: '40px', border: '1px solid #fff', borderRadius: '7px' }} src={'https://s3-us-west-2.amazonaws.com/s.cdpn.io/156905/profile/profile-512.jpg?1530296477'} /><span className='responsive'>John Doe</span></li>
+        </ul>
+      </Grid>
+
+      <Grid item xs={12} className='non-responsive'>
+        <TextField variant="standard"
+          InputProps={{
+            disableUnderline: true,
+            style: { padding: '6px 17px', color: '#32363C' },
+          }}
+          className='searchBar' fullWidth placeholder="Search for online course" id="fullWidth" />
+      </Grid>
+
+
+      <Fade inProp={displayResponsiveMenu}>
         <header>
           <nav>
             <Grid container>
@@ -62,51 +91,35 @@ function Header() {
 
           <ul>
             <li className={location.pathname === '/creations'? 'activeSidebarMenu' : ''}>
-              <Link  to='/creations'>
+              <Link onClick={() => setDisplayResponsiveMenu(false)} to='/creations'>
                 <img alt="menu-icon" src={location.pathname === '/creations' ? MenuIcon2Active : MenuIcon2} /> <span>Creations</span> 
               </Link>
             </li>
             <li className={location.pathname === '/invitation'? 'activeSidebarMenu' : ''} >
-              <Link to='/invitation'>
+              <Link onClick={() => setDisplayResponsiveMenu(false)}  to='/invitation'>
                 <img alt="menu-icon" src={location.pathname === '/invitation' ? MenuIcon3Active : MenuIcon3} /><span>Invitation</span>
               </Link>
             </li>
             <li className={location.pathname === '/litigation'? 'activeSidebarMenu' : ''} >
-              <Link to='/litigation'>
+              <Link onClick={() => setDisplayResponsiveMenu(false)}  to='/litigation'>
                 <img alt="menu-icon" src={location.pathname === '/litigation' ? MenuIcon4Active : MenuIcon4} /> <span>Litigation</span>
               </Link>
             </li>
             <li className={location.pathname === '/wallet'? 'activeSidebarMenu' : ''} >
-              <Link to='/wallet'>
+              <Link onClick={() => setDisplayResponsiveMenu(false)}  to='/wallet'>
                 <img alt="menu-icon" src={location.pathname === '/wallet' ? MenuIcon5Active : MenuIcon5}  />  <span>Wallet</span> 
               </Link>
             </li>
             <li className={location.pathname === '/credit'? 'activeSidebarMenu' : ''} >
-              <Link to='/credit'>
+              <Link onClick={() => setDisplayResponsiveMenu(false)}  to='/credit'>
                 <img alt="menu-icon" src={location.pathname === '/credit' ? MenuIcon6Active : MenuIcon6}  />  <span>Credit</span> 
               </Link>
             </li>
           </ul>
           </nav>
         </header>
-      )}
+      </Fade>
 
-      <Grid item md={2} xs={6} className='headerMenu'>
-        <ul style={{ display: 'flex', justifyContent: 'flex-end', gap: '18px', alignItems: 'center', marginTop: '45px' }}>
-          <li className='menuBox'><img alt='icon-menu-1' src={icon1} /></li>
-          <li className='menuBox'><img alt='icon-menu-1' src={icon2} /></li>
-          <li style={{ display: 'flex', width: '120px', alignItems: 'center', gap: '5px' }}><img alt='user-img' style={{width: '40px', border: '1px solid #fff', borderRadius: '7px' }} src={'https://s3-us-west-2.amazonaws.com/s.cdpn.io/156905/profile/profile-512.jpg?1530296477'} /> <span className='responsive'>John Doe</span></li>
-        </ul>
-      </Grid>
-
-      <Grid item xs={12} className='non-responsive'>
-        <TextField variant="standard"
-          InputProps={{
-            disableUnderline: true,
-            style: { padding: '6px 17px', color: '#32363C' },
-          }}
-          className='searchBar' fullWidth placeholder="Search for online course" id="fullWidth" />
-      </Grid>
     </Grid>
   );
 }

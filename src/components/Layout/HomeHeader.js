@@ -27,7 +27,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 import { CSSTransition } from 'react-transition-group';
 
-const duration = 1000000000000000;
+const duration = 200000;
 
 const Fade = (props) => {
   return (
@@ -106,27 +106,27 @@ function HomeHeader() {
 
           <ul>
             <li className={location.pathname === '/creations'? 'activeSidebarMenu' : ''}>
-              <Link  to='/creations'>
+              <Link onClick={() => setDisplayResponsiveMenu(false)} to='/creations'>
                 <img alt="menu-icon" src={location.pathname === '/creations' ? MenuIcon2Active : MenuIcon2} /> <span>Creations</span> 
               </Link>
             </li>
             <li className={location.pathname === '/invitation'? 'activeSidebarMenu' : ''} >
-              <Link to='/invitation'>
+              <Link onClick={() => setDisplayResponsiveMenu(false)}  to='/invitation'>
                 <img alt="menu-icon" src={location.pathname === '/invitation' ? MenuIcon3Active : MenuIcon3} /><span>Invitation</span>
               </Link>
             </li>
             <li className={location.pathname === '/litigation'? 'activeSidebarMenu' : ''} >
-              <Link to='/litigation'>
+              <Link onClick={() => setDisplayResponsiveMenu(false)}  to='/litigation'>
                 <img alt="menu-icon" src={location.pathname === '/litigation' ? MenuIcon4Active : MenuIcon4} /> <span>Litigation</span>
               </Link>
             </li>
             <li className={location.pathname === '/wallet'? 'activeSidebarMenu' : ''} >
-              <Link to='/wallet'>
+              <Link onClick={() => setDisplayResponsiveMenu(false)}  to='/wallet'>
                 <img alt="menu-icon" src={location.pathname === '/wallet' ? MenuIcon5Active : MenuIcon5}  />  <span>Wallet</span> 
               </Link>
             </li>
             <li className={location.pathname === '/credit'? 'activeSidebarMenu' : ''} >
-              <Link to='/credit'>
+              <Link onClick={() => setDisplayResponsiveMenu(false)}  to='/credit'>
                 <img alt="menu-icon" src={location.pathname === '/credit' ? MenuIcon6Active : MenuIcon6}  />  <span>Credit</span> 
               </Link>
             </li>

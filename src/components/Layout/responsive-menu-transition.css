@@ -2,7 +2,7 @@
   opacity: 0;
 }
 .alert-enter-active {
-  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms;
   opacity: 1;
 }
 .alert-enter-done {
