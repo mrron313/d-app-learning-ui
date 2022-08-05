@@ -1514,12 +1514,12 @@ color: #32363C;
   }
 
   .carousel {
-    height: 450px;
-    perspective: 480px;
+    height: 410px;
+    perspective: 497px;
     transform-style: preserve-3d;
-    transform-origin: 0% 50%;
-    top: 60%;
-    left: 0px;
+    transform-origin: 0% 43%;
+    top: 73%;
+    left: -22px;
   }
 
   .carousel .carousel-item > img {
@@ -1537,6 +1537,9 @@ color: #32363C;
     opacity: 1!important;
   }
 
+  .rightIcon, .leftIcon {
+    top: 32%;
+  }
 
   header {
     padding: 0 20px;

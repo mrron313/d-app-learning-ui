@@ -110,6 +110,15 @@ function HomeHeader() {
           <li style={{ display: 'flex', width: '120px', alignItems: 'center', gap: '5px' }}><img alt='user-img' style={{width: '40px', border: '1px solid #fff', borderRadius: '7px' }} src={'https://s3-us-west-2.amazonaws.com/s.cdpn.io/156905/profile/profile-512.jpg?1530296477'} /><span className='responsive'>John Doe</span></li>
         </ul>
       </Grid>
+
+      <Grid item xs={12} className='non-responsive'>
+        <TextField variant="standard"
+          InputProps={{
+            disableUnderline: true,
+            style: { padding: '6px 17px', color: '#32363C' },
+          }}
+          className='searchBar' fullWidth placeholder="Search for online course" id="fullWidth" />
+      </Grid>
     </Grid>
   );
 }
