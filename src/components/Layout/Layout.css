@@ -1390,6 +1390,11 @@ color: #32363C;
     gap: 10px;
   }
 
+  .invitationCardLeftText span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
   .invitationCardRightButton {
     flex-direction: row;
     gap: 15px;
@@ -1411,7 +1416,9 @@ color: #32363C;
 
   .invitationCardLeftImage img {
     height: 100%;
-    width: 100%;
+    min-width: 90px;
+    max-width: 90px;
+    width: 90px;
   }
 
   .invitationCardLeftButton .chipPreview span, .invitationCardLeftButton .chipPending span {
