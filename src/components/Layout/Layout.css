@@ -1381,7 +1381,7 @@ color: #32363C;
   
   .createCollectionBox {
     padding: 10px;
-    height: 550px;
+    height: 460px;
   }
   
   .responsiveCreateCollectionBox {
@@ -1625,6 +1625,7 @@ color: #32363C;
     height: 40px;
     color: #071011;
     min-width: 40px!important;
+
   }
 
 }
