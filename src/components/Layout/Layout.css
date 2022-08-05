@@ -1590,7 +1590,7 @@ color: #32363C;
 
   .topLearnerCardLeft {
     display: flex;
-    gap: 10px;
+    gap: 20px;
   }
 
   .courseCardLeft {

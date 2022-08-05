@@ -96,7 +96,7 @@ function HomeHeader() {
           <nav>
             <Grid container>
               <Grid item xs={10} className='logoContainer'>
-                <Link to="/"><img alt='logo' src={logo} /></Link>
+                <Link onClick={() => setDisplayResponsiveMenu(false)} to="/"><img alt='logo' src={logo} /></Link>
               </Grid>
 
               <Grid item xs={2} className='responsiveClearIcon'>
