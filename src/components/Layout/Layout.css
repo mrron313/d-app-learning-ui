@@ -549,7 +549,10 @@ color: #32363C;
 }
 
 .latestNewsCardLeftText {
-  padding: 20px 15px;
+  padding: 9px 15px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .latestNewsCardLeftText h6 {
@@ -1308,12 +1311,12 @@ color: #32363C;
   }
 
   .searchBarCollection {
-    width: 63%!important;
+    width: 62%!important;
   }
 
   .collectionCard {
     width: 76% !important;
-    height: 57f 0px!important;
+    height: 100%!important;
     justify-content: flex-start;
     padding: 15px;
   }
@@ -1346,7 +1349,12 @@ color: #32363C;
     justify-content: unset!important;
     align-items: unset!important;
     padding: 0px!important;
-    height: 30px;
+    height: 50px;
+  }
+
+  .collectionRightButton {
+    height: 40px;
+    margin-top: 5px;
   }
 
   .collectionAddNew {
@@ -1591,12 +1599,12 @@ color: #32363C;
     transform-style: preserve-3d;
     transform-origin: 0% 43%;
     top: 73%;
-    left: -22px;
+    left: -7%;
   }
 
   .carousel .carousel-item > img {
-    width: 322px;
-    height: 322px;
+    width: 64%;
+    height: 83%;
   }
 
   .carousel .carousel-item {
@@ -1611,6 +1619,10 @@ color: #32363C;
 
   .rightIcon, .leftIcon {
     top: 32%;
+  }
+
+  .leftIcon {
+    left: 0.3%;
   }
 
   header {
@@ -1713,8 +1725,23 @@ color: #32363C;
     color: #071011;
     min-width: 40px!important;
   }
+}
 
+@media only screen and (max-width: 375) {
+  .carousel .carousel-item > img {
+    width: 60%;
+    height: 83%;
+  }
 
+  .carousel {
+    left: -5%;
+  }
 
+  .leftIcon {
+    left: -3%;
+  }
 
+  .rightIcon {
+    right: -0.5%;
+  }
 }
