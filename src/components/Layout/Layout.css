@@ -1395,6 +1395,10 @@ color: #32363C;
     gap: 15px;
   }
 
+  .invitationCardLeftImage {
+    width: 100%;
+  }
+
   .invitationCardLeftImage img {
     height: 100%;
     width: 100%;
