@@ -1672,7 +1672,9 @@ color: #32363C;
 
   header ul li {
     margin: 20px 0px;
-    padding: 10px 110px;
+    padding: 10px 80px;
+    margin-left: 41px;
+    width: 150px;
   }
   
   .activeSidebarMenu {
