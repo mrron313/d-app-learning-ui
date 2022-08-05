@@ -1609,8 +1609,8 @@ color: #32363C;
   }
 
   .latestNewsCardLeftImage img{
-    height: 100%;
-    width: 100%;
+    object-fit: contain;
+    height: auto;
   }
 
   .topLearnerCardLeft {
