@@ -20,8 +20,28 @@ import MenuIcon4Active from "../../assets/bank-icon-2.png";
 import MenuIcon5Active from "../../assets/wallet-icon-2.png";
 import MenuIcon6Active from "../../assets/credit-icon-2.png";
 
+import './responsive-menu-transition.css';
+
 import { Button, Grid, TextField } from '@mui/material';
 import { Link, useLocation } from 'react-router-dom';
+
+import { CSSTransition } from 'react-transition-group';
+
+const duration = 6000;
+
+const defaultStyle = {
+  transition: `opacity ${duration}ms ease-in-out`,
+  opacity: 0,
+}
+
+
+const Fade = (props) => {
+  return (
+    <CSSTransition classNames="alert" in={props.inProp} timeout={duration} unmountOnExit>
+      {props.children}
+    </CSSTransition>
+  );
+};
 
 function HomeHeader() {
   const location = useLocation();
@@ -56,10 +76,29 @@ function HomeHeader() {
       </Grid>
 
       <Grid item xs={6} className='non-responsive responsiveMenuBar'>
-        <Button onClick={() => setDisplayResponsiveMenu(true)}><MenuIcon /></Button>
+        <Button onClick={(e) => setDisplayResponsiveMenu(true)}><MenuIcon /></Button>
       </Grid>
 
-      { displayResponsiveMenu && (
+      <Grid item md={2} xs={6} className='headerMenu'>
+        <ul style={{ display: 'flex', justifyContent: 'flex-end', gap: '25px', alignItems: 'center', marginTop: '45px' }}>
+          <li className='menuBox'><img alt='icon-menu-1' src={icon1} /></li>
+          <li className='menuBox'><img alt='icon-menu-1' src={icon2} /></li>
+          <li style={{ display: 'flex', width: '120px', alignItems: 'center', gap: '5px' }}><img alt='user-img' style={{width: '40px', border: '1px solid #fff', borderRadius: '7px' }} src={'https://s3-us-west-2.amazonaws.com/s.cdpn.io/156905/profile/profile-512.jpg?1530296477'} /><span className='responsive'>John Doe</span></li>
+        </ul>
+      </Grid>
+
+      <Grid item xs={12} className='non-responsive'>
+        <TextField variant="standard"
+          InputProps={{
+            disableUnderline: true,
+            style: { padding: '6px 17px', color: '#32363C' },
+          }}
+          className='searchBar' fullWidth placeholder="Search for online course" id="fullWidth" />
+      </Grid>
+
+
+
+      <Fade inProp={displayResponsiveMenu}>
         <header>
           <nav>
             <Grid container>
@@ -67,8 +106,8 @@ function HomeHeader() {
                 <Link to="/"><img alt='logo' src={logo} /></Link>
               </Grid>
 
-              <Grid item xs={2} className='logoContainer'>
-                <Button onClick={() => setDisplayResponsiveMenu(false)}>Close</Button>
+              <Grid item xs={2} className='responsiveClearIcon'>
+                <Button onClick={() => setDisplayResponsiveMenu(false)}><ClearIcon /></Button>
               </Grid>
             </Grid>
 
@@ -101,24 +140,7 @@ function HomeHeader() {
           </ul>
           </nav>
         </header>
-      )}
-
-      <Grid item md={2} xs={6} className='headerMenu'>
-        <ul style={{ display: 'flex', justifyContent: 'flex-end', gap: '25px', alignItems: 'center', marginTop: '45px' }}>
-          <li className='menuBox'><img alt='icon-menu-1' src={icon1} /></li>
-          <li className='menuBox'><img alt='icon-menu-1' src={icon2} /></li>
-          <li style={{ display: 'flex', width: '120px', alignItems: 'center', gap: '5px' }}><img alt='user-img' style={{width: '40px', border: '1px solid #fff', borderRadius: '7px' }} src={'https://s3-us-west-2.amazonaws.com/s.cdpn.io/156905/profile/profile-512.jpg?1530296477'} /><span className='responsive'>John Doe</span></li>
-        </ul>
-      </Grid>
-
-      <Grid item xs={12} className='non-responsive'>
-        <TextField variant="standard"
-          InputProps={{
-            disableUnderline: true,
-            style: { padding: '6px 17px', color: '#32363C' },
-          }}
-          className='searchBar' fullWidth placeholder="Search for online course" id="fullWidth" />
-      </Grid>
+      </Fade>
     </Grid>
   );
 }
