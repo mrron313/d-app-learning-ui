@@ -1600,6 +1600,7 @@ color: #32363C;
   .latestNewsCardLeft {
     display: flex;
     gap: 7px;
+    height: 100%;
   }
 
   .latestNewsCardLeftImage {
