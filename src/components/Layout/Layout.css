@@ -1294,7 +1294,7 @@ color: #32363C;
   }
 
   .header ul {
-    justify-content: unset!important;
+    justify-content: flex-end!important;
     overflow: initial;
     margin-top: 20px!important;
     gap: 0px;
@@ -1562,7 +1562,7 @@ color: #32363C;
   }
 
   .latestNewsCard {
-    height: 16%;
+    height: 16.5%;
   }
 
   .latestNewsCardLeft {
@@ -1593,6 +1593,10 @@ color: #32363C;
   .courseCardLeftImage img {
     width: 100%;
     height: 100%;
+  }
+
+  .latestNewsCardLeftText {
+    padding: 0px 15px!important;
   }
 
   .slider-container {
@@ -1638,6 +1642,7 @@ color: #32363C;
 
   header .logoContainer img {
     margin: 34px 0px 0px 108px!important;
+    width: 50%!important;
   }
 
   header nav {

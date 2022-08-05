@@ -27,13 +27,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 import { CSSTransition } from 'react-transition-group';
 
-const duration = 6000;
-
-const defaultStyle = {
-  transition: `opacity ${duration}ms ease-in-out`,
-  opacity: 0,
-}
-
+const duration = 1000000000000000;
 
 const Fade = (props) => {
   return (
