@@ -83,7 +83,7 @@ function HomeHeader() {
         <ul style={{ display: 'flex', justifyContent: 'flex-end', gap: '18px', alignItems: 'center', marginTop: '45px' }}>
           <li className='menuBox'><img alt='icon-menu-1' src={icon1} /></li>
           <li className='menuBox'><img alt='icon-menu-1' src={icon2} /></li>
-          <li style={{ display: 'flex', width: '120px', alignItems: 'center', gap: '5px' }}><img alt='user-img' style={{width: '40px', border: '1px solid #fff', borderRadius: '7px' }} src={'https://s3-us-west-2.amazonaws.com/s.cdpn.io/156905/profile/profile-512.jpg?1530296477'} /><span className='responsive'>John Doe</span></li>
+          <li style={{ display: 'flex', alignItems: 'center', gap: '5px' }}><img alt='user-img' style={{width: '40px', border: '1px solid #fff', borderRadius: '7px' }} src={'https://s3-us-west-2.amazonaws.com/s.cdpn.io/156905/profile/profile-512.jpg?1530296477'} /><span className='responsive'>John Doe</span></li>
         </ul>
       </Grid>
 
