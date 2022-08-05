@@ -1108,6 +1108,10 @@ color: #32363C;
   justify-content: space-between;
 }
 
+.collectionTitleBoxButton {
+  margin-bottom: 0px;
+}
+
 .searchBarCollection {
   box-sizing: border-box;
   width: 300px!important;
@@ -1312,6 +1316,12 @@ color: #32363C;
     display: block;
     width: 100%;
     margin-bottom: 30px;
+  }
+
+  .collectionTitleBoxButton {
+    display: flex;
+    justify-content: inherit;
+    margin-bottom: 20px;
   }
 
   .searchBarCollection {
@@ -1544,6 +1554,7 @@ color: #32363C;
 
   .inner-div {
     height: 700px;
+    margin-top: 10px;
   }
 
   .userDetails {

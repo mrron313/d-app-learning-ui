@@ -16,7 +16,7 @@ const Creations = () => {
       
       <Grid item xs={12} className='collectionTitleBox'>
         <Typography className='inviationHeaderTitle' variant='h6'>My Collection</Typography>
-        <div className='collectionTitleBox'>
+        <div className='collectionTitleBoxButton'>
           <TextField variant="standard"
             InputProps={{
               disableUnderline: true,
