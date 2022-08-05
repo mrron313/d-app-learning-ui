@@ -1354,7 +1354,7 @@ color: #32363C;
   }
 
   .invitationCard {
-    height: 310px;
+    height: 100%;
   }
 
   .invitationCardRight {
@@ -1365,7 +1365,7 @@ color: #32363C;
   } 
 
   .invitationCardLeft {
-    gap: 8px;
+    gap: 10px;
   }
 
   .invitationCardRightButton {
@@ -1378,12 +1378,12 @@ color: #32363C;
   }
 
   .invitationCardLeftButton {
-    gap: 10px;
+    gap: 15px;
   }
 
   .invitationCardLeftImage img {
-    height: 114px;
-    width: 80px;
+    height: 100%;
+    width: 100%;
   }
 
   .invitationCardLeftButton .chipPreview span, .invitationCardLeftButton .chipPending span {
@@ -1547,9 +1547,23 @@ color: #32363C;
     margin-top: 20px!important;
   }
 
+  .latestNewsCard {
+    height: 16%;
+  }
+
   .latestNewsCardLeft {
     display: flex;
     gap: 7px;
+  }
+
+  .latestNewsCardLeftImage {
+    height: 100%;
+    width: 60%;
+  }
+
+  .latestNewsCardLeftImage img{
+    height: 100%;
+    width: 100%;
   }
 
   .topLearnerCardLeft {
@@ -1563,7 +1577,7 @@ color: #32363C;
   }
 
   .courseCardLeftImage img {
-    width: 120px;
+    width: 100%;
     height: 100%;
   }
 

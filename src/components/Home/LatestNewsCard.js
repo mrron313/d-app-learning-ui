@@ -7,7 +7,7 @@ function LatestNewsCard(props) {
     <Grid container className="invitationCard latestNewsCard">
       <Grid item xs={12}>
         <div className="invitationCardLeft latestNewsCardLeft">
-          <div className="invitationCardLeftImage">
+          <div className="invitationCardLeftImage latestNewsCardLeftImage">
             <img alt='course-card' width='150' src={LatestNewsCardImg} />
           </div>
           <div className="invitationCardLeftText latestNewsCardLeftText">
