@@ -583,6 +583,9 @@ color: #32363C;
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+.slider-container {
+  height: 700px;
+}
 
 .rightIcon {
   position: absolute;
@@ -1349,6 +1352,57 @@ color: #32363C;
   .collectionAddNew {
     width: 105px!important;
   }
+
+  .invitationCard {
+    height: 310px;
+  }
+
+  .invitationCardRight {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+  } 
+
+  .invitationCardLeft {
+    gap: 8px;
+  }
+
+  .invitationCardRightButton {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .acceptButton span, .declineButton span {
+    font-size: 15px;
+  }
+
+  .invitationCardLeftButton {
+    gap: 10px;
+  }
+
+  .invitationCardLeftImage img {
+    height: 114px;
+    width: 80px;
+  }
+
+  .invitationCardLeftButton .chipPreview span, .invitationCardLeftButton .chipPending span {
+    font-size: 14px;
+  }
+
+  .courseCard {
+    height: 215px;
+  }
+
+  .topLearnerCard {
+    height: 70px;
+  }
+
+  .topLearnerCardLeftImage img {
+    border-radius: 11.9162px;
+    height: 50px;
+    width: 50px;
+  }
   
   .trandingNewsCard {
     flex-direction: column;
@@ -1513,6 +1567,10 @@ color: #32363C;
     height: 100%;
   }
 
+  .slider-container {
+    height: 470px;
+  }
+
   .carousel {
     height: 410px;
     perspective: 497px;
@@ -1643,41 +1701,6 @@ color: #32363C;
   }
 
 
-  .invitationCard {
-    height: 310px;
-  }
 
-  .invitationCardRight {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 20px;
-  } 
-
-  .invitationCardLeft {
-    gap: 8px;
-  }
-
-  .invitationCardRightButton {
-    flex-direction: row;
-    gap: 15px;
-  }
-
-  .acceptButton span, .declineButton span {
-    font-size: 15px;
-  }
-
-  .invitationCardLeftButton {
-    gap: 10px;
-  }
-
-  .invitationCardLeftImage img {
-    height: 114px;
-    width: 80px;
-  }
-
-  .invitationCardLeftButton .chipPreview span, .invitationCardLeftButton .chipPending span {
-    font-size: 14px;
-  }
 
 }

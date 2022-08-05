@@ -9,7 +9,7 @@ import Slider from './Slider';
 const Home = () => {
   return ( 
     <Grid container spacing={4}>
-      <Grid item xs={12} style={{ height: '700px', }}>
+      <Grid item xs={12} className='slider-container'>
         <Slider />
       </Grid>
 
