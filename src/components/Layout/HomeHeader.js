@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import MenuIcon from '@mui/icons-material/Menu';
+import ClearIcon from '@mui/icons-material/Clear';
 
 import logo from "../../assets/logo.png";
 import icon1 from "../../assets/icon-1.png";
@@ -53,8 +55,8 @@ function HomeHeader() {
         </div>
       </Grid>
 
-      <Grid item xs={6} className='non-resposive'>
-        <Button onClick={() => setDisplayResponsiveMenu(true)}>Sidebar</Button>
+      <Grid item xs={6} className='non-responsive responsiveMenuBar'>
+        <Button onClick={() => setDisplayResponsiveMenu(true)}><MenuIcon /></Button>
       </Grid>
 
       { displayResponsiveMenu && (

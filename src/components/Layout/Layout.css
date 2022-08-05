@@ -1603,4 +1603,28 @@ color: #32363C;
     max-width: 100%;
   }
 
+  .responsiveMenuBar {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .responsiveMenuBar button {
+    height: 40px;
+    background: #fff;
+    color: #071011;
+    min-width: 40px!important;
+  }
+
+  .responsiveClearIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .responsiveClearIcon button {
+    height: 40px;
+    color: #071011;
+    min-width: 40px!important;
+  }
+
 }

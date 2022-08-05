@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import MenuIcon from '@mui/icons-material/Menu';
+import ClearIcon from '@mui/icons-material/Clear';
 
 import logo from "../../assets/logo.png";
 import icon1 from "../../assets/icon-1.png";
@@ -41,8 +43,8 @@ function Header() {
           className='searchBar' fullWidth placeholder="Search for online course" id="fullWidth" />
       </Grid>
 
-      <Grid item xs={6} className='non-responsive'>
-        <Button onClick={() => setDisplayResponsiveMenu(true)}>Sidebar</Button>
+      <Grid item xs={6} className='non-responsive responsiveMenuBar'>
+        <Button onClick={() => setDisplayResponsiveMenu(true)}><MenuIcon /></Button>
       </Grid>
 
       { displayResponsiveMenu && (
@@ -53,8 +55,8 @@ function Header() {
                 <Link to="/"><img alt='logo' src={logo} /></Link>
               </Grid>
 
-              <Grid item xs={2} className='logoContainer'>
-                <Button onClick={() => setDisplayResponsiveMenu(false)}>Close</Button>
+              <Grid item xs={2} className='responsiveClearIcon'>
+                <Button onClick={() => setDisplayResponsiveMenu(false)}><ClearIcon /></Button>
               </Grid>
             </Grid>
 
