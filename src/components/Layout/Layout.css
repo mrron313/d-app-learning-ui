@@ -1409,11 +1409,15 @@ color: #32363C;
   }
 
   .courseCard {
-    height: 215px;
+    height: 29.5%;
   }
 
   .topLearnerCard {
     height: 70px;
+  }
+
+  .topLearnerCardLeftImage {
+    width: 13%;
   }
 
   .topLearnerCardLeftImage img {
