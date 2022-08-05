@@ -1310,12 +1310,12 @@ color: #32363C;
 
   .collectionCard {
     width: 76% !important;
-    height: 570px;
+    height: 57f 0px!important;
     justify-content: flex-start;
     padding: 15px;
   }
 
-  .invitationCardLeft {
+  .collectionCardLeft {
     display: block;
     gap: 0px;
   }
@@ -1452,11 +1452,18 @@ color: #32363C;
   .front__face-photo {
     height: 71px;
     width: 72px;
+    border: 2px solid #fff;
+  }
+
+  .userDetailsLeftHeader h4 {
+    font-size: 22px;
+    font-weight: 760!important;
   }
 
   .userDetailsChip .chip {
     min-width: 140px!important;
     font-size: 14px!important;
+    font-weight: 600;
   }
 
   .inner-div {
@@ -1601,6 +1608,11 @@ color: #32363C;
 
   .creditCard {
     max-width: 100%;
+    margin-top: 0px
+  }
+
+  .otherContributorSection {
+    height: 800px;
   }
 
   .responsiveMenuBar {
@@ -1625,7 +1637,44 @@ color: #32363C;
     height: 40px;
     color: #071011;
     min-width: 40px!important;
+  }
 
+
+  .invitationCard {
+    height: 310px;
+  }
+
+  .invitationCardRight {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+  } 
+
+  .invitationCardLeft {
+    gap: 8px;
+  }
+
+  .invitationCardRightButton {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .acceptButton span, .declineButton span {
+    font-size: 15px;
+  }
+
+  .invitationCardLeftButton {
+    gap: 10px;
+  }
+
+  .invitationCardLeftImage img {
+    height: 114px;
+    width: 80px;
+  }
+
+  .invitationCardLeftButton .chipPreview span, .invitationCardLeftButton .chipPending span {
+    font-size: 14px;
   }
 
 }

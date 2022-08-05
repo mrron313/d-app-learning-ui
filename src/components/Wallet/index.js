@@ -9,6 +9,10 @@ const Wallet = () => {
     navigate('/scenario-1/create-collection');
   };
 
+  const handleClickSeeCollection = () => {
+    navigate('/creations');
+  };
+
   return ( 
     <div>
       <div className="inner-div">
@@ -28,7 +32,7 @@ const Wallet = () => {
             </Grid>
             <Grid container className='userDetails'>
               <Grid item md={12} spacing={5} className='userDetailsRight'>
-                <Button className='collectionButton'>
+                <Button className='collectionButton' onClick={handleClickSeeCollection}>
                   View My Collections
                 </Button>
 

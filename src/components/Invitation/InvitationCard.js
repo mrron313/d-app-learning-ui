@@ -5,7 +5,7 @@ import UserImage1 from '../../assets/user-image-2.jpeg';
 function InvitationCard() {
   return (
     <Grid container className="invitationCard">
-      <Grid item xs={6.5}>
+      <Grid item md={6.5} xs={12}>
         <div className="invitationCardLeft">
           <div className="invitationCardLeftImage">
             <img src={InvitationCardImg} />
@@ -17,14 +17,19 @@ function InvitationCard() {
             <Typography variant='span'>
               https://www.youtube.com/watch?v=dbMk9vWqgpc
             </Typography>
+
+            <div className="invitationCardLeftButton non-responsive">
+              <Chip label='Preview' className='chipPreview' />
+              <Chip label='Pending' className='chipPending'  />
+            </div>
           </div>
-          <div className="invitationCardLeftButton">
+          <div className="invitationCardLeftButton responsive">
             <Chip label='Preview' className='chipPreview' />
             <Chip label='Pending' className='chipPending'  />
           </div>
         </div>
       </Grid>
-      <Grid item xs={5.5}>
+      <Grid item md={5.5} xs={12}>
         <div className="invitationCardRight">
           <div className="invitationCardRightUser">
             <div className="postedImage">
