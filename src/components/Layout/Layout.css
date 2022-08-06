@@ -1,3 +1,5 @@
+/**** GLOBAL ****/
+
 @font-face {
   font-family: 'Gliroy';
   src: local('Gliroy'), url(../../fonts/Gilroy-Bold.ttf) format('opentype');
@@ -37,6 +39,8 @@ body {
   display: none!important
 }
 
+/** END: GLOBAL **/
+
 /* 
   Layout Design
 */
@@ -71,7 +75,7 @@ body {
   border-radius: 15px;
   border: none;
   margin-left: 10px !important;
-color: #32363C;
+  color: #32363C;
 }
 
 .searchBar label {  
@@ -414,10 +418,6 @@ color: #32363C;
   flex-direction: column;
   align-items: flex-end;
   justify-content: end;
-}
-
-.invitationCardRightUser {
-
 }
 
 .postedImage {
@@ -1644,6 +1644,7 @@ color: #32363C;
 
   .slider-container {
     height: 470px;
+    min-width: 100%;
   }
 
   .carousel {
@@ -1653,16 +1654,17 @@ color: #32363C;
     transform-origin: 0% 43%;
     top: 73%;
     left: -7%;
+    min-width: 100%;
   }
 
   .carousel .carousel-item > img {
-    width: 64%;
+    width: 63%;
     height: 83%;
   }
 
   .carousel .carousel-item {
     visibility: hidden;
-    width: 505px;
+    width: 510px;
     height: 400px;
     position: absolute;
     top: 0;
@@ -1675,7 +1677,11 @@ color: #32363C;
   }
 
   .leftIcon {
-    left: 0.3%;
+    left: -1%;
+  }
+
+  .rightIcon {
+    right: 1%;
   }
 
   header {
@@ -1783,14 +1789,496 @@ color: #32363C;
   }
 }
 
-@media only screen and (min-width: 375) {
+@media only screen and (max-width: 375px) {
+  .non-responsive {
+    display: flex !important;
+  }
+
+  .sidebarResponsive, .responsive {
+    display: none;
+  }
+
+  .header {
+    height: 95px;
+    margin-bottom: 70px;
+  }
+
+  .header ul {
+    justify-content: flex-end!important;
+    overflow: initial;
+    margin-top: 20px!important;
+    gap: 0px;
+  }
+
+  .layout {
+    padding: 10px 20px;
+    min-height: 1020px;
+  }
+
+  .collectionTitleBox {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .collectionTitleBoxButton {
+    display: flex;
+    justify-content: inherit;
+    margin-bottom: 20px;
+  }
+
+  .searchBarCollection {
+    width: 62%!important;
+  }
+
+  .collectionCard {
+    width: 76% !important;
+    height: 100%!important;
+    justify-content: flex-start;
+    padding: 15px;
+  }
+
+  .collectionCardLeft {
+    display: block;
+    gap: 0px;
+  }
+
+  .collectionCardLeftText {
+    border: none!important;
+  }
+
+  .collectionCardLeftImage {
+    padding: 0px;
+    width: 100%!important;
+  }
+
+  .collectionCardLeftImage img {
+    width: 100%!important;
+  }
+
+  .collectionFollowerDateCreated {
+    width: 200px;
+    margin: 10px;
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: unset!important;
+    align-items: unset!important;
+    padding: 0px!important;
+    height: 50px;
+  }
+
+  .collectionRightButton {
+    height: 40px;
+    margin-top: 5px;
+  }
+
+  .collectionAddNew {
+    width: 105px!important;
+  }
+
+  .invitationCard {
+    height: 100%;
+  }
+
+  .invitationCardRight {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+  } 
+
+  .invitationCardLeft {
+    gap: 10px;
+  }
+
+  .invitationCardLeftText span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .invitationCardRightButton {
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .acceptButton span, .declineButton span {
+    font-size: 15px;
+  }
+
+  .invitationCardLeftButton {
+    gap: 15px;
+  }
+
+  .invitationCardLeftImage {
+    min-width: 63px;
+  }
+
+  .invitationCardLeftImage img {
+    height: 100%;
+    min-width: 90px;
+    max-width: 90px;
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .invitationCardLeftButton .chipPending, .invitationCardLeftButton .chipPreview {
+    width: 78px !important;
+    height: 35px !important;
+  }
+
+  .invitationCardLeftButton .chipPreview span, .invitationCardLeftButton .chipPending span {
+    font-size: 14px;
+  }
+
+  .courseCard {
+    height: 29.5%;
+  }
+
+  .topLearnerCard {
+    height: 70px;
+  }
+
+  .topLearnerCardLeftImage {
+    width: 13%;
+  }
+
+  .topLearnerCardLeftImage img {
+    border-radius: 11.9162px;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .trandingNewsCard {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .trandingNewsCardImage img {
+    width: 100%;
+  }
+
+  .trandingNewsCardTextTitle {
+    margin-bottom: 10px;
+  }
+
+  .trendingNewsRightButton {
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 35px;
+  }
+
+  .invitationCardRightButton {
+    margin-bottom: 20px;
+  }
+
+  .trandingNewsCardTextParagraph {
+    text-align: justify;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .createCollectionBox {
+    padding: 10px;
+    height: 460px;
+  }
+  
+  .responsiveCreateCollectionBox {
+    height: 940px;
+  }
+
+  .leftCollectionTitle {
+    margin-left: 0px!important;
+  }
+
+  .createCollectionBoxScenario2 {
+    height: 700px;
+  }
+
+  .userCard {
+    width: 84%;
+    position: relative;
+    padding: 20px 17px;
+  }
+
+  .userCardImage img {
+    width: 55px;
+    border-radius: 10px;
+  }
+  
+  .userCardDetails {
+    margin-left: 10px;
+  }
+
+  .userCardDetails h6 {
+    font-size: 15px;
+  }
+
+  .userCardChips {
+    position: absolute;
+    bottom: 20px;
+    left: 4%;
+  }
+
+  .userCardChips .chip {
+    width: 120px;
+    height: 35px;
+  }
+
+  .userCardChips .chip span {
+    font-size: 14px!important;
+  }
+
+  .footerSection {
+    padding: 10px 37px;
+    margin-top: 70px;
+    text-align: center;
+  }
+
+  .footerSection .socialIcons {
+    justify-content: center;
+  }
+
+  .qrSectionDiv {
+    margin-left: 0px!important;
+  }
+
+  .litigationBoxHeader th:first-child {
+    border-top-left-radius: 20px!important;
+    border-top-right-radius: 20px;
+  }
+
+
+  .front__face-photo {
+    height: 71px;
+    width: 72px;
+    border: 2px solid #fff;
+  }
+
+  .userDetailsLeftHeader h4 {
+    font-size: 22px;
+    font-weight: 760!important;
+  }
+
+  .userDetailsChip .chip {
+    min-width: 140px!important;
+    font-size: 14px!important;
+    font-weight: 600;
+  }
+
+  .inner-div {
+    height: 700px;
+    margin-top: 10px;
+  }
+
+  .userDetails {
+    top: -244px;
+    display: flex;
+    background: #fff;
+    gap: 0px;
+    padding: 20px;
+    margin-bottom: 100px;
+    height: 460px;
+  }
+
+  .collectionButton {
+    width: 90%;
+    height: 195px;
+    margin-left: 0px !important;
+  }
+  
+  .collectionButton2{
+    width: 90%;
+    height: 195px;
+    margin-left: 0px !important;
+    margin-top: 20px!important;
+  }
+
+  .signInCollectionButton {
+    width: 40%;
+  }
+
+  .transparentGreenButton {
+    width: 55%;
+  }
+
+  .latestNewsCard {
+    height: 16.5%;
+  }
+
+  .latestNewsCardLeft {
+    display: flex;
+    gap: 7px;
+    height: 100%;
+  }
+
+  .latestNewsCardLeftImage {
+    height: 100%;
+    width: 60%;
+  }
+
+  .latestNewsCardLeftImage img{
+    object-fit: contain;
+    height: auto;
+  }
+
+  .topLearnerCardLeft {
+    display: flex;
+    gap: 20px;
+  }
+
+  .courseCardLeft {
+    display: flex;
+    gap: 10px;
+  }
+
+  .courseCardLeftImage img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .latestNewsCardLeftText {
+    padding: 0px 15px!important;
+  }
+
+  header {
+    padding: 0 20px;
+    z-index: 99999999;
+  }
+
+  header .logoContainer img {
+    margin: 34px 0px 0px 108px!important;
+    width: 50%!important;
+  }
+
+  header nav {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #fff;
+    top: 0px;
+    left: -100px;
+    transition: 0.5s;
+  }
+
+  header nav.active {
+    left: 0;
+  }
+
+  header nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 95%;
+  }
+
+  header ul li {
+    margin: 20px 0px;
+    padding: 10px 80px;
+    margin-left: 41px;
+    width: 150px;
+  }
+  
+  .activeSidebarMenu {
+    background: linear-gradient(104.08deg, #FECE76 -28.92%, #F78B88 76.85%);
+    border-radius: 100px;
+    box-shadow: 0px 13px 39px rgba(247, 143, 138, 0.47);
+  }
+
+  .activeSidebarMenu a {
+    color: #fff!important;
+  }
+
+  header ul li a {
+    text-decoration: none;
+    color: #32363C;
+  }
+  
+  header ul li a img {  
+    top: 4px;
+    position: relative;
+    margin-right: 15px;
+    margin-left: 10px;
+  }
+  
+  header ul li a span {
+    top: -3px;
+    position: relative;
+  }
+
+  .non-responsive .searchBar {
+      margin-top: 24px!important;    
+      width: 100%!important;
+      margin-left: 0px !important;
+  }
+
+  .creditCard {
+    max-width: 100%;
+    margin-top: 0px
+  }
+
+  .otherContributorSection {
+    height: 800px;
+  }
+
+  .responsiveMenuBar {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .responsiveMenuBar button {
+    height: 40px;
+    background: #fff;
+    color: #071011;
+    min-width: 40px!important;
+  }
+
+  .responsiveClearIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .responsiveClearIcon button {
+    height: 40px;
+    color: #071011;
+    min-width: 40px!important;
+  }
+
+  .slider-container {
+    height: 470px;
+  }
+
+  .carousel {
+    height: 410px;
+    perspective: 497px;
+    transform-style: preserve-3d;
+    transform-origin: 0% 43%;
+    top: 73%;
+    left: -5%;
+  }
+
   .carousel .carousel-item > img {
     width: 60%;
     height: 83%;
   }
 
-  .carousel {
-    left: -5%;
+  .carousel .carousel-item {
+    visibility: hidden;
+    width: 505px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 116px;
+    opacity: 1!important;
+  }
+
+  .rightIcon, .leftIcon {
+    top: 32%;
   }
 
   .leftIcon {
@@ -1798,6 +2286,6 @@ color: #32363C;
   }
 
   .rightIcon {
-    right: -0.5%;
+    right: -1%;
   }
 }
