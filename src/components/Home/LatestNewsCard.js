@@ -12,7 +12,7 @@ function LatestNewsCard(props) {
           </div>
           <div className="invitationCardLeftText latestNewsCardLeftText">
             <Typography variant='h6'>
-                Amet minim mollit non deserunt ullamco 
+                Amet minim mollit non 
             </Typography>
             <Typography variant='span'>
                 May 15, 2022
