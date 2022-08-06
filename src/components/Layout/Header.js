@@ -24,6 +24,8 @@ import MenuIcon5Active from "../../assets/wallet-icon-2.png";
 import MenuIcon6Active from "../../assets/credit-icon-2.png";
 import { CSSTransition } from 'react-transition-group';
 
+import './responsive-menu-transition.css';
+
 const duration = 200000;
 
 const Fade = (props) => {

@@ -45,7 +45,7 @@ export default function StepTwo() {
             <Grid md={2} xs={12}>
                 <Typography className='collectionFieldTitle'>Author</Typography>
             </Grid>
-            <Grid xs={6}>
+            <Grid xs={6} md={6}>
                 <TextField
                     variant="standard"           
                     InputProps={{
@@ -53,7 +53,7 @@ export default function StepTwo() {
                         style: { padding: '8px 20px' },
                     }} className='collectionField' fullWidth placeholder="Select.." />
             </Grid>
-            <Grid xs={4}>
+            <Grid xs={5} md={1.5}>
                 <Button className='inviteButton'><img width={17} style={{ marginRight: '10px' }} alt='invite-icon' src={InviteIcon} /> Invite</Button>
             </Grid>
         </Grid>

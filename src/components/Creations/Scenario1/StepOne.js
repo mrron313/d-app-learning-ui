@@ -8,7 +8,7 @@ export default function StepOne() {
             <Grid xs={12} md={2}>
                 <Typography className='collectionFieldTitle'>Title</Typography>
             </Grid>
-            <Grid xs={12} md={12}>
+            <Grid xs={12} md={10}>
                 <TextField
                     variant="standard"           
                     InputProps={{

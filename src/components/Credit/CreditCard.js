@@ -23,7 +23,7 @@ export default function CreditCard() {
             </Typography>
 
             <Typography variant='span'>
-                Reference site about Lorem Ipsum, giving information on its origins, as well
+                Reference site about Lorem Ipsum, giving information
             </Typography>
 
             <div className='creditCardIcons'>
