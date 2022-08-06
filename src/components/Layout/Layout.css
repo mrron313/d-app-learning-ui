@@ -1497,12 +1497,13 @@ color: #32363C;
   }
 
   .userCard {
-    width: 83%;
+    width: 84%;
     position: relative;
+    padding: 20px 17px;
   }
 
   .userCardImage img {
-    width: 35px;
+    width: 55px;
     border-radius: 10px;
   }
   
@@ -1517,7 +1518,7 @@ color: #32363C;
   .userCardChips {
     position: absolute;
     bottom: 20px;
-    left: 10%;
+    left: 4%;
   }
 
   .userCardChips .chip {

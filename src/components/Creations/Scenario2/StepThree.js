@@ -57,7 +57,7 @@ export default function StepThree() {
                 </Grid>
             </Grid>
 
-            <Grid item md={12} xs={12} className='qrSectionDiv'>
+            <Grid item md={4} xs={12} className='qrSectionDiv'>
                 <Typography variant='h6' className='qrCodeTitle'>Current QR Code</Typography>
                 <div className='qrSection'>
                     <img alt='qr' src={QrCode} />
